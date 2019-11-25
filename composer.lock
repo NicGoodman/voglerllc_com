@@ -4,8 +4,100 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed6e40d5680ef0b3d326fdb21b79a664",
+    "content-hash": "204e3a2ac1c31dab3e82f3c9ee8733ae",
     "packages": [
+        {
+            "name": "99designs/phumbor",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/99designs/phumbor.git",
+                "reference": "7b32a4bc0a247b07490dc57399aaaa06b5b32632"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/99designs/phumbor/zipball/7b32a4bc0a247b07490dc57399aaaa06b5b32632",
+                "reference": "7b32a4bc0a247b07490dc57399aaaa06b5b32632",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Thumbor": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stuart Campbell",
+                    "email": "stuart.campbell@99designs.com"
+                }
+            ],
+            "description": "A minimal Thumbor library for PHP",
+            "homepage": "https://github.com/99designs/phumbor",
+            "keywords": [
+                "99designs",
+                "Thumbnails",
+                "php",
+                "thumbor"
+            ],
+            "time": "2017-01-23T02:27:47+00:00"
+        },
+        {
+            "name": "carlcs/craft-redactorcustomstyles",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carlcs/craft-redactorcustomstyles.git",
+                "reference": "6f19b8cac814e6666e34c949177878a35368b548"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carlcs/craft-redactorcustomstyles/zipball/6f19b8cac814e6666e34c949177878a35368b548",
+                "reference": "6f19b8cac814e6666e34c949177878a35368b548",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "craftcms/redactor": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redactor Custom Styles",
+                "handle": "redactor-custom-styles",
+                "changelogUrl": "https://github.com/carlcs/craft-redactorcustomstyles/raw/v3/CHANGELOG.md",
+                "downloadUrl": "https://github.com/carlcs/craft-redactorcustomstyles/archive/v3.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "carlcs\\redactorcustomstyles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "carlcs",
+                    "homepage": "https://github.com/carlcs"
+                }
+            ],
+            "description": "Redactor Custom Styles plugin for Craft CMS",
+            "keywords": [
+                "Redactor",
+                "buttons",
+                "craftcms",
+                "styles"
+            ],
+            "time": "2018-06-07T15:36:35+00:00"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.2.1",
@@ -323,22 +415,22 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.2.2",
+            "version": "3.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d8145c14be484ed81aa10207f610232cba8d3866"
+                "reference": "868202831139e51b9d60d9738147ac9635bc760c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d8145c14be484ed81aa10207f610232cba8d3866",
-                "reference": "d8145c14be484ed81aa10207f610232cba8d3866",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/868202831139e51b9d60d9738147ac9635bc760c",
+                "reference": "868202831139e51b9d60d9738147ac9635bc760c",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "1.6.3",
                 "craftcms/oauth2-craftid": "~1.0.0",
-                "craftcms/plugin-installer": "~1.5.3",
+                "craftcms/plugin-installer": "~1.5.0",
                 "craftcms/server-check": "~1.1.0",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "^3.1.0",
@@ -361,9 +453,9 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "~2.11.0",
+                "twig/twig": "^2.7.2",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.21.0",
+                "yiisoft/yii2": "~2.0.17.0",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -380,13 +472,10 @@
                 "bower-asset/yii2-pjax": "~2.0.1"
             },
             "require-dev": {
-                "codeception/codeception": "^3.0",
-                "codeception/mockery-module": "^0.3",
-                "codeception/specify": "^0.4",
-                "codeception/verify": "^1.0",
-                "fzaninotto/faker": "^1.8",
-                "league/factory-muffin": "^3.0",
-                "vlucas/phpdotenv": "^3.0"
+                "codeception/codeception": "^2.4",
+                "codeception/mockery-module": "~0.2.2",
+                "codeception/specify": "~0.4.6",
+                "codeception/verify": "~0.3.3"
             },
             "suggest": {
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
@@ -410,7 +499,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-07-14T18:34:11+00:00"
+            "time": "2019-04-10T17:10:47+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -465,16 +554,16 @@
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.5.4",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/plugin-installer.git",
-                "reference": "4989a9d57babdf53da0bd70cf6a3145635d653e8"
+                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/4989a9d57babdf53da0bd70cf6a3145635d653e8",
-                "reference": "4989a9d57babdf53da0bd70cf6a3145635d653e8",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/2b75646ce7091d24ef053e8d0b45f89cab04b16f",
+                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f",
                 "shasum": ""
             },
             "require": {
@@ -502,7 +591,54 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2019-05-23T13:16:39+00:00"
+            "time": "2017-07-25T13:26:24+00:00"
+        },
+        {
+            "name": "craftcms/redactor",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/redactor.git",
+                "reference": "e4d96d805af031f4a80e5742e5651f30b55e6bca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/e4d96d805af031f4a80e5742e5651f30b55e6bca",
+                "reference": "e4d96d805af031f4a80e5742e5651f30b55e6bca",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redactor",
+                "handle": "redactor"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\redactor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
+            "keywords": [
+                "Redactor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "time": "2019-02-21T13:34:33+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -635,24 +771,28 @@
             "time": "2017-06-12T01:10:27+00:00"
         },
         {
-            "name": "doctrine/lexer",
+            "name": "davechild/textstatistics",
             "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/lexer.git",
-                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8"
+                "url": "https://github.com/DaveChild/Text-Statistics.git",
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/1febd6c3ef84253d7c815bed85fc622ad207a9f8",
-                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8",
+                "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.5"
+                "phpunit/phpunit": "4.2.*"
+            },
+            "suggest": {
+                "ext-bcmath": "More accurate floating point calculations.",
+                "ext-mbstring": "Handle multi-byte text properly."
             },
             "type": "library",
             "extra": {
@@ -661,8 +801,107 @@
                 }
             },
             "autoload": {
+                "psr-0": {
+                    "DaveChild\\TextStatistics": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Child",
+                    "email": "dave@addedbytes.com",
+                    "homepage": "https://www.addedbytes.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP package to measure the readability of text according to various algorithms.",
+            "homepage": "https://github.com/DaveChild/Text-Statistics",
+            "time": "2018-06-19T09:25:42+00:00"
+        },
+        {
+            "name": "dgrigg/craft-migration-assistant",
+            "version": "3.1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dgrigg/craft-migration-assistant.git",
+                "reference": "73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dgrigg/craft-migration-assistant/zipball/73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5",
+                "reference": "73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Migration Assistant",
+                "handle": "migrationassistant",
+                "developer": "DGrigg Dev Inc.",
+                "developerUrl": "https://dgrigg.com",
+                "class": "dgrigg\\migrationassistant\\MigrationAssistant",
+                "hasCpSettings": false,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/dgrigg/craft-migration-assistant/master/CHANGELOG.md"
+            },
+            "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+                    "dgrigg\\migrationassistant\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Derrick Grigg",
+                    "email": "derrick@dgrigg.com"
+                }
+            ],
+            "description": "Create migrations for settings and content at the click of a mouse. Keep environments in sync with ease.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft plugin",
+                "craftcms",
+                "migration",
+                "migration assistant",
+                "migration manager"
+            ],
+            "time": "2019-03-09T02:15:05+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -683,29 +922,26 @@
                     "email": "schmittjoh@gmail.com"
                 }
             ],
-            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
             "keywords": [
-                "annotations",
-                "docblock",
                 "lexer",
-                "parser",
-                "php"
+                "parser"
             ],
-            "time": "2019-06-08T11:03:04+00:00"
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.9",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25"
+                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/128cc721d771ec2c46ce59698f4ca42b73f71b25",
-                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +985,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-06-23T10:14:27+00:00"
+            "time": "2018-12-04T22:38:24+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -827,24 +1063,87 @@
             "time": "2018-10-01T17:11:02+00:00"
         },
         {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.11.0",
+            "name": "experience/smartdown",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7"
+                "url": "https://github.com/experience/smartdown.craft-plugin.git",
+                "reference": "1413e2c67523ef9c06ac3d150823289a14f054ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7",
-                "reference": "83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7",
+                "url": "https://api.github.com/repos/experience/smartdown.craft-plugin/zipball/1413e2c67523ef9c06ac3d150823289a14f054ce",
+                "reference": "1413e2c67523ef9c06ac3d150823289a14f054ce",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "michelf/php-markdown": "^1.8",
+                "michelf/php-smartypants": "^1.8"
+            },
+            "require-dev": {
+                "codeception/codeception": "dev-master"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "changelogUrl": "https://github.com/experience/smartdown.craft-plugin/blob/master/CHANGELOG.md",
+                "components": {
+                    "smartdown": "experience\\smartdown\\services\\Smartdown"
+                },
+                "class": "experience\\smartdown\\Smartdown",
+                "handle": "smartdown",
+                "hasCpSection": false,
+                "hasSettings": false,
+                "name": "Smartdown",
+                "sourceLanguage": "en-GB"
+            },
+            "autoload": {
+                "psr-4": {
+                    "experience\\smartdown\\": "src/",
+                    "experience\\smartdown\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Experience",
+                    "homepage": "https://experiencehq.net"
+                }
+            ],
+            "description": "Bringing the unbridled joy of Markdown Extra and Smartypants to your Craft websites.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "markdown",
+                "smartypants",
+                "typography"
+            ],
+            "time": "2018-08-31T22:12:11+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
+                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
             },
             "require-dev": {
-                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
+                "simpletest/simpletest": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -857,7 +1156,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1-or-later"
+                "LGPL"
             ],
             "authors": [
                 {
@@ -871,7 +1170,53 @@
             "keywords": [
                 "html"
             ],
-            "time": "2019-07-14T18:58:38+00:00"
+            "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "firstborn/migrationmanager",
+            "version": "3.0.20.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Firstborn/Craft-Migration-Manager.git",
+                "reference": "5a145303082c3f00402ccfc7b0225d6f81e98d1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Firstborn/Craft-Migration-Manager/zipball/5a145303082c3f00402ccfc7b0225d6f81e98d1e",
+                "reference": "5a145303082c3f00402ccfc7b0225d6f81e98d1e",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Migration Manager",
+                "handle": "migrationmanager",
+                "developer": "FirstBorn",
+                "developerUrl": "https://firstborn.com",
+                "class": "firstborn\\migrationmanager\\MigrationManager",
+                "hasCpSettings": false,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/Firstborn/Craft-Migration-Manager/master/CHANGELOG.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "firstborn\\migrationmanager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Derrick Grigg",
+                    "email": "derrick.grigg@firstborn.com"
+                }
+            ],
+            "description": "Quickly create migrations for settings and content at the click of a mouse.",
+            "time": "2019-03-04T14:31:31+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -991,37 +1336,33 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "9f83dded91781a01c63574e387eaa769be769115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
+                "reference": "9f83dded91781a01c63574e387eaa769be769115",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
                 "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "ralouphie/getallheaders": "^2.0.5"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "ext-zlib": "*",
                 "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
-            },
-            "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -1058,7 +1399,43 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "time": "2018-12-04T20:46:45+00:00"
+        },
+        {
+            "name": "imgix/imgix-php",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imgix/imgix-php.git",
+                "reference": "8decfc829a96a20b7a51f40fc7781d9929d08d9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/8decfc829a96a20b7a51f40fc7781d9929d08d9f",
+                "reference": "8decfc829a96a20b7a51f40fc7781d9929d08d9f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Imgix\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "A PHP client library for generating URLs with imgix.",
+            "keywords": [
+                "imgix"
+            ],
+            "time": "2019-04-08T20:48:07+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1127,17 +1504,70 @@
             "time": "2019-01-14T23:55:14+00:00"
         },
         {
-            "name": "league/flysystem",
-            "version": "1.0.53",
+            "name": "ksubileau/color-thief-php",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "08e12b7628f035600634a5e76d95b5eb66cea674"
+                "url": "https://github.com/ksubileau/color-thief-php.git",
+                "reference": "fc2acefacbd037f68cf61bcc62b30ac1bb16ed59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/08e12b7628f035600634a5e76d95b5eb66cea674",
-                "reference": "08e12b7628f035600634a5e76d95b5eb66cea674",
+                "url": "https://api.github.com/repos/ksubileau/color-thief-php/zipball/fc2acefacbd037f68cf61bcc62b30ac1bb16ed59",
+                "reference": "fc2acefacbd037f68cf61bcc62b30ac1bb16ed59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.13",
+                "phpunit/phpunit": "~4.8|~5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD image adapter.",
+                "ext-gmagick": "to use the Gmagick image adapter.",
+                "ext-imagick": "to use the Imagick image adapter."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ColorThief\\": "lib/ColorThief"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-2.5"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Subileau",
+                    "homepage": "http://www.kevinsubileau.fr"
+                }
+            ],
+            "description": "Grabs the dominant color or a representative color palette from an image.",
+            "homepage": "http://www.kevinsubileau.fr/projets/color-thief-php",
+            "keywords": [
+                "color",
+                "dominant",
+                "palette",
+                "php",
+                "thief"
+            ],
+            "time": "2018-10-27T18:57:38+00:00"
+        },
+        {
+            "name": "league/flysystem",
+            "version": "1.0.51",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "755ba7bf3fb9031e6581d091db84d78275874396"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
+                "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
                 "shasum": ""
             },
             "require": {
@@ -1208,7 +1638,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-06-18T20:09:29+00:00"
+            "time": "2019-03-30T13:22:34+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1278,6 +1708,169 @@
             "time": "2018-11-22T18:33:57+00:00"
         },
         {
+            "name": "masterminds/html5",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
+                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35",
+                "sami/sami": "~2.0",
+                "satooshi/php-coveralls": "1.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "time": "2019-03-10T11:41:28+00:00"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Michelf\\": "Michelf/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2018-01-15T00:49:33+00:00"
+        },
+        {
+            "name": "michelf/php-smartypants",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-smartypants.git",
+                "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-smartypants/zipball/47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+                "reference": "47d17c90a4dfd0ccf1f87e25c65e6c8012415aad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP SmartyPants",
+            "homepage": "https://michelf.ca/projects/php-smartypants/",
+            "keywords": [
+                "dashes",
+                "quotes",
+                "spaces",
+                "typographer",
+                "typography"
+            ],
+            "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.4.1",
             "source": {
@@ -1315,6 +1908,351 @@
                 "shell"
             ],
             "time": "2018-07-07T07:35:36+00:00"
+        },
+        {
+            "name": "mundschenk-at/php-typography",
+            "version": "v6.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mundschenk-at/php-typography.git",
+                "reference": "00b1b11130ffa6437d3a50b6659f415cc55fa609"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/00b1b11130ffa6437d3a50b6659f415cc55fa609",
+                "reference": "00b1b11130ffa6437d3a50b6659f415cc55fa609",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pcre": "*",
+                "masterminds/html5": "^2.5.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.2.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "ext-curl": "*",
+                "phpbench/phpbench": "^0.13||^1.0@dev",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpstan/phpstan": "^0.9",
+                "phpunit/phpunit": "5.*||6.*||7.*",
+                "squizlabs/php_codesniffer": "^3",
+                "wp-coding-standards/wpcs": "^2.0"
+            },
+            "bin": [
+                "src/bin/update-patterns.php",
+                "src/bin/update-iana.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Putzer",
+                    "email": "github@mundschenk.at",
+                    "homepage": "https://code.mundschenk.at",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jeffrey D. King",
+                    "email": "jeff.king@weathersource.com",
+                    "homepage": "http://kingdesk.com",
+                    "role": "Original author"
+                }
+            ],
+            "description": "A PHP library for improving your web typography",
+            "time": "2019-01-28T23:17:29+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize.git",
+                "reference": "18b6e609af1dfc4f953b1ab73b0c64a7b8199646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/18b6e609af1dfc4f953b1ab73b0c64a7b8199646",
+                "reference": "18b6e609af1dfc4f953b1ab73b0c64a7b8199646",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "ksubileau/color-thief-php": "^1.3",
+                "mikehaertl/php-shellcommand": "~1.2",
+                "nystudio107/craft-imageoptimize-imgix": "^1.0.3",
+                "nystudio107/craft-imageoptimize-thumbor": "^1.1.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "ImageOptimize",
+                "handle": "image-optimize",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-imageoptimize/v1/CHANGELOG.md",
+                "components": {
+                    "optimize": "nystudio107\\imageoptimize\\services\\Optimize",
+                    "optimizedImages": "nystudio107\\imageoptimize\\services\\OptimizedImages",
+                    "placeholder": "nystudio107\\imageoptimize\\services\\Placeholder"
+                },
+                "class": "nystudio107\\imageoptimize\\ImageOptimize"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimize\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Automatically create & optimize responsive image transforms, using either native Craft transforms or a service like Imgix, with zero template changes.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "image",
+                "image-variants",
+                "imgix",
+                "optimize",
+                "optimize-images"
+            ],
+            "time": "2019-02-23T03:27:15+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-imgix",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
+                "reference": "54d30be25179955ed61cd5cea9797b05c6442811"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/54d30be25179955ed61cd5cea9797b05c6442811",
+                "reference": "54d30be25179955ed61cd5cea9797b05c6442811",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "imgix/imgix-php": "^2.1.0",
+                "nystudio107/craft-imageoptimize": "^1.5.2"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizeimgix\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Imgix image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "imgix"
+            ],
+            "time": "2019-02-23T03:24:51+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-thumbor",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
+                "reference": "5a9e385fd4e122b84703c0d57b811ccb9af4ff6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/5a9e385fd4e122b84703c0d57b811ccb9af4ff6a",
+                "reference": "5a9e385fd4e122b84703c0d57b811ccb9af4ff6a",
+                "shasum": ""
+            },
+            "require": {
+                "99designs/phumbor": "^1.2",
+                "craftcms/cms": "^3.0.0",
+                "nystudio107/craft-imageoptimize": "^1.5.2"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizethumbor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Thumbor image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "thumbor"
+            ],
+            "time": "2019-03-11T12:43:56+00:00"
+        },
+        {
+            "name": "nystudio107/craft-seomatic",
+            "version": "3.1.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-seomatic.git",
+                "reference": "b2e2d3715edccfdca68942404aeeeb82dcba95d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b2e2d3715edccfdca68942404aeeeb82dcba95d9",
+                "reference": "b2e2d3715edccfdca68942404aeeeb82dcba95d9",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.20",
+                "davechild/textstatistics": "1.0.2",
+                "php-science/textrank": "^1.0.3",
+                "sunra/php-simple-html-dom-parser": "^1.5.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SEOmatic",
+                "handle": "seomatic",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
+                "class": "nystudio107\\seomatic\\Seomatic",
+                "components": {
+                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
+                    "helper": "nystudio107\\seomatic\\services\\Helper",
+                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
+                    "link": "nystudio107\\seomatic\\services\\Link",
+                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
+                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
+                    "script": "nystudio107\\seomatic\\services\\Script",
+                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
+                    "tag": "nystudio107\\seomatic\\services\\Tag",
+                    "title": "nystudio107\\seomatic\\services\\Title"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\seomatic\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 3. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
+            "keywords": [
+                "Craft",
+                "JSON-LD",
+                "Sitemap",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "facebook",
+                "meta",
+                "seo",
+                "seomatic",
+                "tags",
+                "twitter"
+            ],
+            "time": "2019-04-02T17:47:17+00:00"
+        },
+        {
+            "name": "nystudio107/craft-typogrify",
+            "version": "1.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-typogrify.git",
+                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/4106b4469057508061f751c6b7b4460f12c6a1b1",
+                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "michelf/php-smartypants": "^1.8",
+                "mundschenk-at/php-typography": "^6.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Typogrify",
+                "handle": "typogrify",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/v1/CHANGELOG.md",
+                "components": {
+                    "typogrify": "nystudio107\\typogrify\\services\\TypogrifyService"
+                },
+                "class": "nystudio107\\typogrify\\Typogrify"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\typogrify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "typogrify"
+            ],
+            "time": "2019-03-20T20:31:43+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1360,6 +2298,59 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "php-science/textrank",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DavidBelicza/PHP-Science-TextRank.git",
+                "reference": "882adbd0f0d2d0b4229a43dee563785c84738ff9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/882adbd0f0d2d0b4229a43dee563785c84738ff9",
+                "reference": "882adbd0f0d2d0b4229a43dee563785c84738ff9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "7.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpScience\\TextRank\\": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Belicza",
+                    "email": "87.bdavid@gmail.com"
+                }
+            ],
+            "description": "TextRank (automatic text summarization) for PHP7 and HHVM.",
+            "keywords": [
+                "PHP7",
+                "automatic",
+                "hhvm",
+                "science",
+                "strict",
+                "summarization",
+                "textrank"
+            ],
+            "time": "2018-10-08T08:50:14+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -1518,24 +2509,24 @@
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=5.3"
             },
             "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
+                "phpunit/phpunit": "~3.7.0",
+                "satooshi/php-coveralls": ">=1.0"
             },
             "type": "library",
             "autoload": {
@@ -1554,7 +2545,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2019-03-08T08:55:37+00:00"
+            "time": "2016-02-11T07:05:27+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -1698,17 +2689,65 @@
             "time": "2015-10-13T18:44:15+00:00"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.1",
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a"
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
-                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                },
+                {
+                    "name": "S.C. Chen",
+                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2016-11-22T22:57:47+00:00"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
+                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
                 "shasum": ""
             },
             "require": {
@@ -1757,7 +2796,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2019-04-21T09:21:45+00:00"
+            "time": "2019-03-10T07:52:41+00:00"
         },
         {
             "name": "symfony/console",
@@ -2027,7 +3066,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -2427,16 +3466,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.11.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "699ed2342557c88789a15402de5eb834dedd6792"
+                "reference": "ed9c49220e09bfaeb1ba4d48077c08a7b09908dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
-                "reference": "699ed2342557c88789a15402de5eb834dedd6792",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ed9c49220e09bfaeb1ba4d48077c08a7b09908dd",
+                "reference": "ed9c49220e09bfaeb1ba4d48077c08a7b09908dd",
                 "shasum": ""
             },
             "require": {
@@ -2447,12 +3486,12 @@
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -2490,7 +3529,112 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-18T15:37:11+00:00"
+            "time": "2019-03-23T14:28:58+00:00"
+        },
+        {
+            "name": "verbb/field-manager",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/field-manager.git",
+                "reference": "9c5f9f433e7ba5042841e8a47b49be168cf7db56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/9c5f9f433e7ba5042841e8a47b49be168cf7db56",
+                "reference": "9c5f9f433e7ba5042841e8a47b49be168cf7db56",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC11"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Field Manager",
+                "handle": "field-manager",
+                "description": "Manage your fields and field groups with ease with simple field or group cloning and quicker overall management.",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "documentationUrl": "https://github.com/verbb/field-manager",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/field-manager/craft-3/CHANGELOG.md",
+                "class": "verbb\\fieldmanager\\FieldManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\fieldmanager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Manage your fields and field groups with ease with simple field or group cloning and quicker overall management.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "field manager"
+            ],
+            "time": "2019-02-10T12:13:47+00:00"
+        },
+        {
+            "name": "verbb/super-table",
+            "version": "2.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/super-table.git",
+                "reference": "03dadd201326af0bd93d8b37f9e099e87a057fdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/03dadd201326af0bd93d8b37f9e099e87a057fdb",
+                "reference": "03dadd201326af0bd93d8b37f9e099e87a057fdb",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.20"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Super Table",
+                "handle": "super-table",
+                "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
+                "documentationUrl": "https://github.com/verbb/super-table",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/super-table/craft-3/CHANGELOG.md",
+                "class": "verbb\\supertable\\SuperTable"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\supertable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "super table"
+            ],
+            "time": "2019-04-09T08:37:27+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2595,21 +3739,21 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.21",
+            "version": "2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7e4622252c5f272373e1339a47d331e4a55e9591"
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7e4622252c5f272373e1339a47d331e4a55e9591",
-                "reference": "7e4622252c5f272373e1339a47d331e4a55e9591",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -2691,7 +3835,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-06-18T14:25:08+00:00"
+            "time": "2019-03-22T21:26:26+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -2749,16 +3893,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.5",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "a6bbf55093e154e2eeb2c778af8717989495270e"
+                "reference": "632929c0682c6470ec838cf15d14c22418e6d07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/a6bbf55093e154e2eeb2c778af8717989495270e",
-                "reference": "a6bbf55093e154e2eeb2c778af8717989495270e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/632929c0682c6470ec838cf15d14c22418e6d07f",
+                "reference": "632929c0682c6470ec838cf15d14c22418e6d07f",
                 "shasum": ""
             },
             "require": {
@@ -2802,7 +3946,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2019-06-04T14:21:49+00:00"
+            "time": "2019-03-30T20:33:53+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",

@@ -1,0 +1,48 @@
+{% block aboutMain %}
+<section id="hero">
+  {% include "_partials/components/_block_hero" %}
+  {% block main %}{% endblock %}
+</section>
+<article id="contactMainContent" class="flex flex-wrap justify-center mx-auto w-screen p-32 border-t-2 border-white">
+  <h2 class="m-auto w-full pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
+  <p class="w-3/4 text-white font-raleway text-base font-normal tracking-wide leading-normal pl-20 pr-20 pb-6">{{ entry.pageIntro }}</p>
+  <div id="contactButtons" class="w-full flex flex-row justify-center">
+    <button class="flex-no-grow h-10 w-48 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+      Call Us Now!
+    </button>
+    <button class="flex-no-grow h-10 w-48 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+      Send Us An Email!
+    </button>
+  </div>
+  <div id="imageColumn" class="w-1/2 m-3">
+    <img src="/images/stumphoe.jpg" class="w-full h-full rounded-lg border-2 border-white shadow-lg" />
+  </div>
+  <div id="forms" class="flex flex-wrap justify-center mx-auto w-1/2 m-3 p-6 max-w-md flex-1 rounded-lg shadow-lg border-white border-2 font-raleway text-sm font-medium leading-tight text-blue-darkest bg-orange-vv">
+    <form class="w-1/2">
+      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="What's Your Name?" aria-label="Full name">
+      </div>
+    </form>
+    <form class="w-1/2">
+      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" aria-label="Full name">
+      </div>
+    </form>
+    <form class="w-full">
+      <div class="flex items-left border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Subject" aria-label="Full name">
+      </div>
+    </form>
+    <form class="w-full">
+      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Message" aria-label="Full name">
+      </div>
+    </form>
+    <button id="getInTouch" class="flex-no-grow h-10 w-48 mt-3 bg-transparent hover:bg-blue-vv text-blue-darkest hover:text-white border-2 border-blue-darkest rounded-full leading-none font-montserrat font-bold">
+      Submit
+    </button>
+  </div>
+
+
+</article>
+{% endblock %}

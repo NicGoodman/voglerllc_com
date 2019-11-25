@@ -23,3 +23,9 @@ return [
     ],
     //'bootstrap' => ['my-module'],
 ];
+
+return [
+    '*' => [
+        'useProjectConfigFile' => true,
+    ],
+];

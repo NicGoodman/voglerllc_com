@@ -1,0 +1,24 @@
+{% block portfolioMain %}
+<section id="hero">
+  {% include "_partials/components/_block_hero" %}
+  {% block main %}{% endblock %}
+</section>
+<article id="portfolioMainContent" class="flex flex-wrap justify-center mx-auto w-screen lg:p-12 md:p-6 sm:p-6 border-t-2 border-white">
+  <h2 class="m-auto pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
+  {% for block in entry.pageContent.all() %}
+    {% include ('_partials/components/_block_' ~ block.type.handle) %}
+	{% endfor %}
+  <div id="projectsFeed" class="flex flex-wrap justify-center mx-auto w-screen">
+    {% for entry in craft.entries.section('portfolio') %}
+    <a href="portfolio/{{ entry.slug }}" class="no-underline text-black hover:text-white m-3">
+    <div id="card" class="flex-1 p-6 h-full max-w-md rounded-lg shadow-lg border-white border-2 font-raleway text-sm font-medium leading-tight" style="background-color: {{ random(['#DB9C47', '#C9CBA3', '#FFE1A8']) }};">
+      <div id="heading" class="flex flex-row justify-left pb-3">
+        <h3 class="font-montserrat font-bold text-xl self-center uppercase">{{ entry.pageHeader |smartypants }}</h3>
+      </div>
+      <p>{{ entry.pageIntro |typogrify }}</p>
+    </div>
+    </a>
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% block servicesMain %}
+<section id="hero">
+  {% include "_partials/components/_block_hero" %}
+  {% block main %}{% endblock %}
+</section>
+<article id="servicesMainContent" class="flex flex-wrap justify-center mx-auto w-screen p-12 border-t-2 border-white">
+  <h2 class="m-auto pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
+  <p class="text-white font-raleway text-base font-normal leading-tight">{{ entry.pageIntro }}</p>
+  <div id="pageIntro" class="flex flex-wrap justify-center mx-auto w-screen p-12">
+    {% for block in entry.pageContent.all() %}
+    {% include ('_partials/components/_block_' ~ block.type.handle) %}
+    {% endfor %}
+  </div>
+  <div id="servicesNavigation" class="flex flex-row justify-center w-full">
+    {% set sectionName = entry.servicesType %}
+    {% for entry in craft.entries.section("#{ sectionName }") %}
+    {% set i = loop.index %}
+    {% set navigationBackground = entry.navigationBackground.one() %}
+    <div id="navCard" class="navCard flex w-48 h-48 ml-3 mr-3 rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv cursor-pointer" style="background-image: url('{{ navigationBackground.getUrl }}')" data-related="{{ i }}">
+      <h3 class="m-auto w-3/4 font-montserrat text-lg text-white text-center font-bold leading-normal">
+        {{ entry.pageHeader }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+  {% for entry in craft.entries.section("#{ sectionName }") %}
+  {% set i = loop.index %}
+  <div id="{{ i }}" class="content flex flex-wrap justify-center mx-auto w-screen p-12">
+    {% for block in entry.pageContent.all() %}
+    {% include ('_partials/components/_block_' ~ block.type.handle) %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</article>
+{% endblock %}

@@ -1,7 +1,36 @@
 {
+  "name": "craftcms/craft",
+  "description": "Craft CMS",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "project"
+  ],
+  "license": "Unlicense",
+  "homepage": "https://craftcms.com/",
+  "type": "project",
+  "support": {
+    "email": "support@craftcms.com",
+    "issues": "https://github.com/craftcms/cms/issues",
+    "forum": "https://craftcms.stackexchange.com/",
+    "source": "https://github.com/craftcms/cms",
+    "docs": "https://craftcms.com/docs",
+    "rss": "https://craftcms.com/changelog.rss"
+  },
   "require": {
-    "craftcms/cms": "^3.0.0",
-    "vlucas/phpdotenv": "^2.4.0"
+    "craftcms/cms": "3.1.22",
+    "vlucas/phpdotenv": "^2.4.0",
+    "firstborn/migrationmanager": "3.0.20.1",
+    "craftcms/redactor": "2.3.2",
+    "nystudio107/craft-seomatic": "3.1.47",
+    "nystudio107/craft-imageoptimize": "1.5.4",
+    "nystudio107/craft-typogrify": "1.1.17",
+    "experience/smartdown": "3.0.1",
+    "verbb/super-table": "2.1.17",
+    "verbb/field-manager": "2.0.5",
+    "carlcs/craft-redactorcustomstyles": "3.0.2",
+    "dgrigg/craft-migration-assistant": "3.1.0.1"
   },
   "autoload": {
     "psr-4": {
@@ -9,15 +38,20 @@
     }
   },
   "config": {
-    "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
       "php": "7.0"
     }
   },
   "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    "post-create-project-cmd": [
+      "@php -r \"copy('.env.example', '.env');\"",
+      "@php -r \"unlink('composer.json');\"",
+      "@php -r \"unlink('LICENSE.md');\"",
+      "@php -r \"unlink('README.md');\"",
+      "@php -r \"rename('composer.json.default', 'composer.json');\"",
+      "@composer dump-autoload -o",
+      "@php craft setup/welcome"
     ]
   }
 }

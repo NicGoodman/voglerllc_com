@@ -1,0 +1,12 @@
+{% block hero %}
+{% set backgroundImage = entry.heroImage.one() %}
+<div id="hero" class="flex flex-col mx-auto w-screen h-screen bg-bottom bg-cover" style="background-image: url('{{ backgroundImage.getUrl }}')">
+  <h1 class="m-auto w-2/3 font-montserrat xl:text-4xl lg:text-3xl sm:text-2xl text-white text-center font-bold leading-normal">
+    {% if entry.section.handle == 'portfolio' or entry.section.handle == 'blog' %}
+      {{ entry.postDate | date("d M Y")}} •
+    {% endif %}
+    {{ entry.heroText }}
+  </h1>
+  <i class="fas fa-angle-down self-center justify-end text-white text-5xl"></i>
+</div>
+{% endblock %}

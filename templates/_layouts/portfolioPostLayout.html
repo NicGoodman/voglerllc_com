@@ -1,0 +1,22 @@
+{% extends "_layouts/baseLayout" %}
+{% block body %}
+<header id="header">
+  {% include "_partials/blocks/header" %}
+  {% block header %}{% endblock %}
+</header>
+
+<nav id="navigation">
+  {% include "_partials/blocks/navigation" %}
+  {% block navigation %}{% endblock %}
+</nav>
+
+<main id="main" class="flex flex-col">
+  {% include "_partials/blocks/portfolioPostMain" %}
+  {% block main %}{% endblock %}
+</main>
+
+<footer id="footer">
+  {% include "_partials/blocks/footer" %}
+  {% block footer %}{% endblock %}
+</footer>
+{% endblock %}

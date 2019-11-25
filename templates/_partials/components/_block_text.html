@@ -1,0 +1,10 @@
+{% block text %}
+<div id="text" class="mx-auto text-white font-raleway text-base font-normal tracking-wide leading-normal pl-20 pr-20 pt-6 pb-6">
+  {% if block.heading |length %}
+  <h3 id="heading" class="font-montserrat font-bold text-xl text-white pb-3">
+    {{ block.heading }}
+  </h3>
+  {% endif %}
+  {{ block.text }}
+</div>
+{% endblock %}

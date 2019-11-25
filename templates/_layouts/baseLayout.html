@@ -1,0 +1,88 @@
+{% do view.registerCssFile(siteUrl ~ "assets/css/main.css") %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	{% block head %}
+	<meta charset="UTF-8">
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		function showNav() {
+			var x = document.getElementById("navFullScreen");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+	<script>
+		$(document).ready(function() {
+			$(".content").each(function() {
+				$(this).hide();
+				if ($(this).attr('id') == 'main') {
+					$(this).show();
+				}
+			});
+			$(".navCard").on("click", function(e) {
+				e.preventDefault();
+				var id = $(this).attr('data-related');
+				$(".content").each(function() {
+					$(this).hide();
+					if ($(this).attr('id') == id) {
+						$(this).show();
+					}
+				});
+			});
+		});
+	</script>
+	<style>
+.accordion {
+  transition: 0.4s;
+}
+
+.accordion:before {
+  content: '\002B'"\00a0";
+
+}
+
+.active:before {
+  content: "\2212""\00a0";
+}
+
+.panel {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+	{% endblock %}
+</head>
+
+<body class="flex flex-col bg-blue-darkest">
+	{% block body %}{% endblock %}
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+
+</html>
