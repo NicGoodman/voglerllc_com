@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "204e3a2ac1c31dab3e82f3c9ee8733ae",
+    "content-hash": "4110fca5308fd8df191a8b1118ed305b",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -372,16 +372,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.22",
+            "version": "3.1.34.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "868202831139e51b9d60d9738147ac9635bc760c"
+                "reference": "c8ec5f0bade4167546c1b09360ded247ecca9c06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/868202831139e51b9d60d9738147ac9635bc760c",
-                "reference": "868202831139e51b9d60d9738147ac9635bc760c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c8ec5f0bade4167546c1b09360ded247ecca9c06",
+                "reference": "c8ec5f0bade4167546c1b09360ded247ecca9c06",
                 "shasum": ""
             },
             "require": {
@@ -410,9 +410,9 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "^2.7.2",
+                "twig/twig": "~2.11.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.17.0",
+                "yiisoft/yii2": "~2.0.21.0",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -456,7 +456,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-04-10T17:10:47+00:00"
+            "time": "2019-08-21T12:20:24+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -552,16 +552,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.3.2",
+            "version": "2.3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "e4d96d805af031f4a80e5742e5651f30b55e6bca"
+                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/e4d96d805af031f4a80e5742e5651f30b55e6bca",
-                "reference": "e4d96d805af031f4a80e5742e5651f30b55e6bca",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/55ee76494f6332ba5709003d2082e51d56ae8b1a",
+                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +570,8 @@
             "type": "craft-plugin",
             "extra": {
                 "name": "Redactor",
-                "handle": "redactor"
+                "handle": "redactor",
+                "documentationUrl": "https://github.com/craftcms/redactor/blob/v2/README.md"
             },
             "autoload": {
                 "psr-4": {
@@ -595,7 +596,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2019-02-21T13:34:33+00:00"
+            "time": "2019-04-29T21:39:05+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1135,52 +1136,6 @@
                 "html"
             ],
             "time": "2019-10-28T03:44:26+00:00"
-        },
-        {
-            "name": "firstborn/migrationmanager",
-            "version": "3.0.20.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Firstborn/Craft-Migration-Manager.git",
-                "reference": "5a145303082c3f00402ccfc7b0225d6f81e98d1e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Firstborn/Craft-Migration-Manager/zipball/5a145303082c3f00402ccfc7b0225d6f81e98d1e",
-                "reference": "5a145303082c3f00402ccfc7b0225d6f81e98d1e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Migration Manager",
-                "handle": "migrationmanager",
-                "developer": "FirstBorn",
-                "developerUrl": "https://firstborn.com",
-                "class": "firstborn\\migrationmanager\\MigrationManager",
-                "hasCpSettings": false,
-                "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/Firstborn/Craft-Migration-Manager/master/CHANGELOG.md"
-            },
-            "autoload": {
-                "psr-4": {
-                    "firstborn\\migrationmanager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Derrick Grigg",
-                    "email": "derrick.grigg@firstborn.com"
-                }
-            ],
-            "description": "Quickly create migrations for settings and content at the click of a mouse.",
-            "time": "2019-03-04T14:31:31+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1942,24 +1897,25 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.5.4",
+            "version": "1.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "18b6e609af1dfc4f953b1ab73b0c64a7b8199646"
+                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/18b6e609af1dfc4f953b1ab73b0c64a7b8199646",
-                "reference": "18b6e609af1dfc4f953b1ab73b0c64a7b8199646",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/955bcc259985929c91ae574f2803da8ddd0d9bd6",
+                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^1.0.3",
-                "nystudio107/craft-imageoptimize-thumbor": "^1.1.2"
+                "nystudio107/craft-imageoptimize-imgix": "^1.1.1",
+                "nystudio107/craft-imageoptimize-sharp": "^1.0.0",
+                "nystudio107/craft-imageoptimize-thumbor": "^1.3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2003,26 +1959,26 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-02-23T03:27:15+00:00"
+            "time": "2019-11-19T12:10:51+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
-                "reference": "54d30be25179955ed61cd5cea9797b05c6442811"
+                "reference": "38c45b20e46c5966cf2e7c2870ee40199d6afd74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/54d30be25179955ed61cd5cea9797b05c6442811",
-                "reference": "54d30be25179955ed61cd5cea9797b05c6442811",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/38c45b20e46c5966cf2e7c2870ee40199d6afd74",
+                "reference": "38c45b20e46c5966cf2e7c2870ee40199d6afd74",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "imgix/imgix-php": "^2.1.0",
-                "nystudio107/craft-imageoptimize": "^1.5.2"
+                "nystudio107/craft-imageoptimize": "^1.6.0"
             },
             "type": "image-transform",
             "autoload": {
@@ -2047,25 +2003,68 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2019-02-23T03:24:51+00:00"
+            "time": "2019-10-04T02:42:44+00:00"
         },
         {
-            "name": "nystudio107/craft-imageoptimize-thumbor",
-            "version": "1.2.2",
+            "name": "nystudio107/craft-imageoptimize-sharp",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
-                "reference": "f9622ef2cd86a0483ee1f9eac7221ffd606b468b"
+                "url": "https://github.com/nystudio107/craft-imageoptimize-sharp.git",
+                "reference": "a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/f9622ef2cd86a0483ee1f9eac7221ffd606b468b",
-                "reference": "f9622ef2cd86a0483ee1f9eac7221ffd606b468b",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938",
+                "reference": "a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-imageoptimize": "^1.5.2",
+                "nystudio107/craft-imageoptimize": "^1.6.0"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizesharp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Sharp image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "sharp"
+            ],
+            "time": "2019-08-13T15:41:30+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-thumbor",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
+                "reference": "223314a17a455656243034bcdb058b5bb1b8dcd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/223314a17a455656243034bcdb058b5bb1b8dcd4",
+                "reference": "223314a17a455656243034bcdb058b5bb1b8dcd4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "nystudio107/craft-imageoptimize": "^1.6.0",
                 "webfactory/phumbor": "^1.2"
             },
             "type": "image-transform",
@@ -2091,20 +2090,20 @@
                 "image-transform",
                 "thumbor"
             ],
-            "time": "2019-06-05T20:17:50+00:00"
+            "time": "2019-07-05T15:23:47+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.47",
+            "version": "3.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "b2e2d3715edccfdca68942404aeeeb82dcba95d9"
+                "reference": "24d5599838c8a561e1966308a39f13e408eb523b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b2e2d3715edccfdca68942404aeeeb82dcba95d9",
-                "reference": "b2e2d3715edccfdca68942404aeeeb82dcba95d9",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/24d5599838c8a561e1966308a39f13e408eb523b",
+                "reference": "24d5599838c8a561e1966308a39f13e408eb523b",
                 "shasum": ""
             },
             "require": {
@@ -2128,6 +2127,7 @@
                     "link": "nystudio107\\seomatic\\services\\Link",
                     "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
                     "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
+                    "seoElements": "nystudio107\\seomatic\\services\\SeoElements",
                     "script": "nystudio107\\seomatic\\services\\Script",
                     "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
                     "tag": "nystudio107\\seomatic\\services\\Tag",
@@ -2164,20 +2164,20 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-04-02T17:47:17+00:00"
+            "time": "2019-11-19T12:13:31+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.17",
+            "version": "1.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1"
+                "reference": "28896d37f184cef87d2bbd84833565d0d732e331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/4106b4469057508061f751c6b7b4460f12c6a1b1",
-                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/28896d37f184cef87d2bbd84833565d0d732e331",
+                "reference": "28896d37f184cef87d2bbd84833565d0d732e331",
                 "shasum": ""
             },
             "require": {
@@ -2221,7 +2221,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2019-03-20T20:31:43+00:00"
+            "time": "2019-04-30T21:24:04+00:00"
         },
         {
             "name": "opis/closure",
@@ -3496,16 +3496,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.12.2",
+            "version": "v2.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed"
+                "reference": "699ed2342557c88789a15402de5eb834dedd6792"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
-                "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
+                "reference": "699ed2342557c88789a15402de5eb834dedd6792",
                 "shasum": ""
             },
             "require": {
@@ -3515,13 +3515,13 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "^3.4|^4.2",
-                "symfony/phpunit-bridge": "^4.4@dev|^5.0"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.12-dev"
+                    "dev-master": "2.11-dev"
                 }
             },
             "autoload": {
@@ -3544,14 +3544,14 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Twig Team",
-                    "homepage": "https://twig.symfony.com/contributors",
-                    "role": "Contributors"
-                },
-                {
                     "name": "Armin Ronacher",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -3559,34 +3559,29 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-11-11T16:52:09+00:00"
+            "time": "2019-06-18T15:37:11+00:00"
         },
         {
             "name": "verbb/field-manager",
-            "version": "2.0.5",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/field-manager.git",
-                "reference": "9c5f9f433e7ba5042841e8a47b49be168cf7db56"
+                "reference": "945e98266ea1a1d0e3f4c6c42a0090647626740f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/field-manager/zipball/9c5f9f433e7ba5042841e8a47b49be168cf7db56",
-                "reference": "9c5f9f433e7ba5042841e8a47b49be168cf7db56",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/945e98266ea1a1d0e3f4c6c42a0090647626740f",
+                "reference": "945e98266ea1a1d0e3f4c6c42a0090647626740f",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC11"
+                "craftcms/cms": "^3.1.0"
             },
             "type": "craft-plugin",
             "extra": {
                 "name": "Field Manager",
                 "handle": "field-manager",
-                "description": "Manage your fields and field groups with ease with simple field or group cloning and quicker overall management.",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "documentationUrl": "https://github.com/verbb/field-manager",
                 "changelogUrl": "https://raw.githubusercontent.com/verbb/field-manager/craft-3/CHANGELOG.md",
                 "class": "verbb\\fieldmanager\\FieldManager"
             },
@@ -3613,20 +3608,20 @@
                 "craftcms",
                 "field manager"
             ],
-            "time": "2019-02-10T12:13:47+00:00"
+            "time": "2019-05-11T02:18:51+00:00"
         },
         {
             "name": "verbb/super-table",
-            "version": "2.1.17",
+            "version": "2.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/super-table.git",
-                "reference": "03dadd201326af0bd93d8b37f9e099e87a057fdb"
+                "reference": "8a2509a278b1a6ad4abac6ded44c9f8dda0b8579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/03dadd201326af0bd93d8b37f9e099e87a057fdb",
-                "reference": "03dadd201326af0bd93d8b37f9e099e87a057fdb",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/8a2509a278b1a6ad4abac6ded44c9f8dda0b8579",
+                "reference": "8a2509a278b1a6ad4abac6ded44c9f8dda0b8579",
                 "shasum": ""
             },
             "require": {
@@ -3664,7 +3659,7 @@
                 "craftcms",
                 "super table"
             ],
-            "time": "2019-04-09T08:37:27+00:00"
+            "time": "2019-07-14T05:19:13+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3822,21 +3817,21 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.17",
+            "version": "2.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
+                "reference": "7e4622252c5f272373e1339a47d331e4a55e9591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
-                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7e4622252c5f272373e1339a47d331e4a55e9591",
+                "reference": "7e4622252c5f272373e1339a47d331e4a55e9591",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -3918,7 +3913,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-03-22T21:26:26+00:00"
+            "time": "2019-06-18T14:25:08+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
