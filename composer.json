@@ -19,14 +19,14 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "3.2.0",
+    "craftcms/cms": "3.3.16.1",
     "vlucas/phpdotenv": "^2.4.0",
-    "craftcms/redactor": "2.3.3.2",
+    "craftcms/redactor": "2.4.0",
     "nystudio107/craft-seomatic": "3.2.34",
     "nystudio107/craft-imageoptimize": "1.6.6",
     "nystudio107/craft-typogrify": "1.1.18",
     "experience/smartdown": "3.0.1",
-    "verbb/super-table": "2.1.21",
+    "verbb/super-table": "2.2.1",
     "verbb/field-manager": "2.1.0",
     "carlcs/craft-redactorcustomstyles": "3.0.2",
     "dgrigg/craft-migration-assistant": "3.1.0.1"
