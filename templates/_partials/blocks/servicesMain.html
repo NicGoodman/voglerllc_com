@@ -24,7 +24,7 @@
   </div>
   {% for entry in craft.entries.section("#{ sectionName }") %}
   {% set i = loop.index %}
-  <div id="{{ i }}" class="content flex flex-wrap justify-center mx-auto w-screen p-12">
+  <div id="{{ i }}" class="content flex flex-wrap justify-center mx-auto">
     {% for block in entry.pageContent.all() %}
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
     {% endfor %}
