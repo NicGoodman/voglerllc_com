@@ -1,6 +1,16 @@
 {% block hero %}
 {% set backgroundImage = entry.heroImage.one() %}
-<div id="hero" class="flex flex-col mx-auto w-screen h-screen bg-bottom bg-cover" style="background-image: url('{{ backgroundImage.getUrl }}')">
+
+{% if backgroundImage %}
+    {% set imgStyles = "background-image: url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
+
+    {% if backgroundImage.hasFocalPoint %}
+        {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
+        {% set y = backgroundImage.focalPoint | last * 100 ~ '%' %}
+        {% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
+    {% endif %}
+{% endif %}
+<div id="hero" class="flex flex-col mx-auto w-screen h-screen bg-bottom bg-cover" style="{{ imgStyles is defined ? imgStyles }}">
   <h1 class="m-auto w-2/3 font-montserrat xl:text-4xl lg:text-3xl sm:text-2xl text-white text-center font-bold leading-normal">
     {% if entry.section.handle == 'portfolio' or entry.section.handle == 'blog' %}
       {{ entry.postDate | date("d M Y")}} •
