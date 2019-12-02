@@ -11,13 +11,13 @@
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
     {% endfor %}
   </div>
-  <div id="servicesNavigation" class="flex flex-row justify-center w-full">
+  <div id="servicesNavigation" class="flex flex-col md:flex-row pt-6 pb-6 justify-center w-full">
     {% set sectionName = entry.servicesType %}
     {% for entry in craft.entries.section("#{ sectionName }") %}
     {% set i = loop.index %}
     {% set navigationBackground = entry.navigationBackground.one() %}
-    <div id="navCard" class="navCard flex w-48 h-48 ml-3 mr-3 rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv cursor-pointer" style="background-image: url('{{ navigationBackground.getUrl }}')" data-related="{{ i }}">
-      <h3 class="m-auto w-3/4 font-montserrat text-lg text-white text-center font-bold leading-normal">
+        <div id="navCard" class="flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv" style="background-image: url('{{ navigationBackground.getUrl }}')" data-related="{{ i }}">
+          <h3 class="m-auto w-3/4 font-montserrat text-sm xl:text-lg text-white text-center font-bold leading-normal">
         {{ entry.pageHeader }}</h3>
     </div>
     {% endfor %}
