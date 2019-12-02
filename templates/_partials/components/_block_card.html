@@ -1,8 +1,8 @@
 {% block card %}
 {% set image = block.cardImage.one() %}
-<div id="card" class="m-3 p-6 max-w-md flex-1 rounded-lg shadow-lg border-white border-2 font-raleway text-sm font-medium leading-tight {{ block.cardBackgroundColor }} text-blue-darkest">
+<div id="card" class="m-3 p-6 max-w-lg flex-1 rounded-lg shadow-lg border-white border-2 font-raleway text-sm font-medium leading-tight {{ block.cardBackgroundColor }} text-blue-darkest">
   {% if block.cardImage |length %}
-    <div id="cardImage" class="flex flex-col justify-center flex-shrink-0 w-32 h-32 xl:w-40 xl:h-40 ml-2 mr-2 shadow-lg rounded-full border-2 border-white bg-center bg-cover" style="background-image: url('{{ image.getUrl }}')">
+    <div id="cardImage" class="flex flex-col justify-center flex-shrink-0 w-32 h-32 xl:w-40 xl:h-40 m-2 self-center shadow-lg rounded-full border-2 border-white bg-center bg-cover" style="background-image: url('{{ image.getUrl }}')">
     </div>
   {% endif %}
   {% if block.cardHeader |length %}
