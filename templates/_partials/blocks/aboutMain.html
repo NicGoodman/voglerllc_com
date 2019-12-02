@@ -18,13 +18,13 @@
   {% endfor %}
   <div id="accordions" class="w-full mt-6">
     <button class="accordion w-full mb-3 p-3 text-white text-left cursor-pointer font-montserrat font-bold border-b-2 border-orange-vv hover:border-white focus:outline-none text-xl">{{ entry.accordionHeader1 }}</button>
-    <div class="panel overflow-hidden flex flex-wrap justify-center mx-auto">
+    <div class="panel overflow-hidden flex flex-wrap justify-center mx-auto p-3">
       {% for block in entry.accordionContent1.all() %}
         {% include ('_partials/components/_block_' ~ block.type.handle) %}
       {% endfor %}
     </div>
     <button class="accordion w-full p-3 text-white text-left cursor-pointer font-montserrat font-bold border-b-2 border-orange-vv hover:border-white focus:outline-none text-xl">{{ entry.accordionHeader2 }}</button>
-    <div class="panel overflow-hidden flex flex-wrap justify-center mx-auto">
+    <div class="panel overflow-hidden flex flex-wrap justify-center mx-auto p-3">
       {% for block in entry.accordionContent2.all() %}
         {% include ('_partials/components/_block_' ~ block.type.handle) %}
       {% endfor %}
