@@ -3817,6 +3817,14 @@ table {
   min-width: 0;
 }
 
+.min-w-sm {
+  min-width: 23rem;
+}
+
+.min-w-lg {
+  min-width: 16rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -9600,6 +9608,14 @@ table {
     min-width: 0;
   }
 
+  .sm\:min-w-sm {
+    min-width: 23rem;
+  }
+
+  .sm\:min-w-lg {
+    min-width: 16rem;
+  }
+
   .sm\:min-w-full {
     min-width: 100%;
   }
@@ -15351,6 +15367,14 @@ table {
 
   .md\:min-w-0 {
     min-width: 0;
+  }
+
+  .md\:min-w-sm {
+    min-width: 23rem;
+  }
+
+  .md\:min-w-lg {
+    min-width: 16rem;
   }
 
   .md\:min-w-full {
@@ -21106,6 +21130,14 @@ table {
     min-width: 0;
   }
 
+  .lg\:min-w-sm {
+    min-width: 23rem;
+  }
+
+  .lg\:min-w-lg {
+    min-width: 16rem;
+  }
+
   .lg\:min-w-full {
     min-width: 100%;
   }
@@ -26857,6 +26889,14 @@ table {
 
   .xl\:min-w-0 {
     min-width: 0;
+  }
+
+  .xl\:min-w-sm {
+    min-width: 23rem;
+  }
+
+  .xl\:min-w-lg {
+    min-width: 16rem;
   }
 
   .xl\:min-w-full {
