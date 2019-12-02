@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de85d6882922dcf6b20a9e09a3f2743f",
+    "content-hash": "d16d0a5982c30964f27f09fe53172b37",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -372,16 +372,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.16.1",
+            "version": "3.3.16.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "b16ba7b81892f97a23f3a24ac6406ed569d2cbc6"
+                "reference": "46871fbfdffaa70e6ea4dc7ab20b5332e0974189"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b16ba7b81892f97a23f3a24ac6406ed569d2cbc6",
-                "reference": "b16ba7b81892f97a23f3a24ac6406ed569d2cbc6",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/46871fbfdffaa70e6ea4dc7ab20b5332e0974189",
+                "reference": "46871fbfdffaa70e6ea4dc7ab20b5332e0974189",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +462,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-11-22T18:32:57+00:00"
+            "time": "2019-11-26T14:27:53+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2051,16 +2051,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.34",
+            "version": "3.2.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "24d5599838c8a561e1966308a39f13e408eb523b"
+                "reference": "8376d6d59bfe8ef164773b021088fa35615a50d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/24d5599838c8a561e1966308a39f13e408eb523b",
-                "reference": "24d5599838c8a561e1966308a39f13e408eb523b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8376d6d59bfe8ef164773b021088fa35615a50d2",
+                "reference": "8376d6d59bfe8ef164773b021088fa35615a50d2",
                 "shasum": ""
             },
             "require": {
@@ -2121,7 +2121,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-11-19T12:13:31+00:00"
+            "time": "2019-11-26T18:08:15+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -3793,16 +3793,16 @@
         },
         {
             "name": "verbb/field-manager",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/field-manager.git",
-                "reference": "945e98266ea1a1d0e3f4c6c42a0090647626740f"
+                "reference": "026cc5d6c030e509158d7525d8764514e7da3a79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/field-manager/zipball/945e98266ea1a1d0e3f4c6c42a0090647626740f",
-                "reference": "945e98266ea1a1d0e3f4c6c42a0090647626740f",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/026cc5d6c030e509158d7525d8764514e7da3a79",
+                "reference": "026cc5d6c030e509158d7525d8764514e7da3a79",
                 "shasum": ""
             },
             "require": {
@@ -3838,7 +3838,7 @@
                 "craftcms",
                 "field manager"
             ],
-            "time": "2019-05-11T02:18:51+00:00"
+            "time": "2019-11-27T06:04:29+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
