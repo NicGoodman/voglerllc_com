@@ -11,7 +11,7 @@
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
     {% endfor %}
   </div>
-  <div id="servicesNavigation" class="flex flex-col md:flex-row pt-6 pb-6 items-center w-full">
+  <div id="servicesNavigation" class="flex flex-col md:flex-row pt-6 pb-6 items-center justify-center w-full">
     {% set sectionName = entry.servicesType %}
     {% for entry in craft.entries.section("#{ sectionName }") %}
     {% set i = loop.index %}
