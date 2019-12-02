@@ -6,7 +6,7 @@
 <article id="servicesMainContent" class="flex flex-wrap justify-center mx-auto w-screen p-12 border-t-2 border-white">
   <h2 class="m-auto pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
   <p class="text-white font-raleway text-base font-normal leading-tight">{{ entry.pageIntro }}</p>
-  <div id="pageIntro" class="flex flex-wrap justify-center mx-auto w-screen p-12">
+  <div id="pageIntro" class="flex flex-wrap justify-center mx-auto">
     {% for block in entry.pageContent.all() %}
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
     {% endfor %}
