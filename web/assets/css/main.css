@@ -3818,7 +3818,7 @@ table {
 }
 
 .min-w-sm {
-  min-width: 22rem;
+  min-width: 21rem;
 }
 
 .min-w-lg {
@@ -9609,7 +9609,7 @@ table {
   }
 
   .sm\:min-w-sm {
-    min-width: 22rem;
+    min-width: 21rem;
   }
 
   .sm\:min-w-lg {
@@ -15370,7 +15370,7 @@ table {
   }
 
   .md\:min-w-sm {
-    min-width: 22rem;
+    min-width: 21rem;
   }
 
   .md\:min-w-lg {
@@ -21131,7 +21131,7 @@ table {
   }
 
   .lg\:min-w-sm {
-    min-width: 22rem;
+    min-width: 21rem;
   }
 
   .lg\:min-w-lg {
@@ -26892,7 +26892,7 @@ table {
   }
 
   .xl\:min-w-sm {
-    min-width: 22rem;
+    min-width: 21rem;
   }
 
   .xl\:min-w-lg {
