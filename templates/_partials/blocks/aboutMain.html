@@ -5,7 +5,7 @@
 </section>
 <article id="aboutMainContent" class="flex flex-wrap justify-center mx-auto w-screen lg:pl-32 lg:pr-32 md:pl-6 md:pr-6 sm:pl-3 sm:pr-3 pt-12 pb-12 border-t-2 border-white">
   <h2 class="m-auto w-full pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
-  <div id="navigationCards" class="flex flex-col lg:flex-row pt-6 pb-6">
+  <div id="navigationCards" class="flex flex-col md:flex-row pt-6 pb-6">
     {% for block in entry.inlineNavigationCards.all() %}
     {% if block.type == "inlineNavigationCard" %}
     {% include "_partials/components/_block_inlineNavigation" %}
