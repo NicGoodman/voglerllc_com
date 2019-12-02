@@ -2,8 +2,8 @@
 {% set navigationCardBackgroundImage = block.navigationCardBackground.one() %}
 {% set navigationCardLink = block.navigationLink %}
 <a href="{{ block.navigationLink.one().url }}" class="no-underline">
-  <div id="card" class="flex h-16 w-screen lg:w-24 lg:h-24 xl:w-48 xl:h-48 m-3 rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv" style="background-image: url('{{ navigationCardBackgroundImage.getUrl }}')">
-    <h3 class="m-auto w-3/4 font-montserrat text-lg text-white text-center font-bold leading-normal">
+  <div id="card" class="flex h-16 w-screen md:w-24 md:h-24 xl:w-48 xl:h-48 m-3 rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv" style="background-image: url('{{ navigationCardBackgroundImage.getUrl }}')">
+    <h3 class="m-auto w-3/4 font-montserrat text-sm md:text-base lg:text-lg text-white text-center font-bold leading-normal">
       {{ block.navigationCardTitle }}</h3>
   </div>
 </a>
