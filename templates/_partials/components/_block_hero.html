@@ -2,7 +2,9 @@
 {% set backgroundImage = entry.heroImage.one() %}
 
 {% if backgroundImage %}
-    {% set imgStyles = "background-image: url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
+    {% set imgStyles = "background: linear-gradient(
+        rgba(44, 55, 71, .45),
+        rgba(44, 55, 71, .45), url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
 
     {% if backgroundImage.hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
