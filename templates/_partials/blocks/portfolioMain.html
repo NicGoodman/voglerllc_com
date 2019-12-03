@@ -9,7 +9,7 @@
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
 	{% endfor %}
   <div id="projectsFeed" class="flex flex-wrap justify-center mx-auto w-screen">
-    {% for entry in craft.entries.section('portfolio') %}
+    {% for entry in craft.entries.section('portfolio').all() %}
     <a href="portfolio/{{ entry.slug }}" class="no-underline text-black hover:text-white m-3">
     <div id="card" class="flex-1 p-6 h-full max-w-md rounded-lg shadow-lg border-white border-2 font-raleway text-sm font-medium leading-tight" style="background-color: {{ random(['#DB9C47', '#C9CBA3', '#FFE1A8']) }};">
       <div id="heading" class="flex flex-row justify-left pb-3">
