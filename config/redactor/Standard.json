@@ -3,7 +3,7 @@
   "plugins": ["fullscreen", "video", "properties"],
   "linkNewTab": true,
   "toolbarFixed": true,
-  "breakline": true,
+  "breakline": false,
   "imageResizable": true,
   "imagePosition": true
 }
