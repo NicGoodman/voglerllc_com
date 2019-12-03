@@ -2863,10 +2863,6 @@ table {
   cursor: pointer;
 }
 
-.hover\:.cursor-pointer:hover {
-  cursor: pointer;
-}
-
 .cursor-wait {
   cursor: wait;
 }
