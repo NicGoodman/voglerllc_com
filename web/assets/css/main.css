@@ -401,9 +401,15 @@ h4,
 h5,
 h6,
 figure,
-p,
 pre {
   margin: 0;
+}
+
+p {
+  margin-top:0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 button {
