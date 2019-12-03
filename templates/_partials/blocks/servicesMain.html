@@ -13,7 +13,7 @@
   </div>
   <div id="servicesNavigation" class="flex flex-col md:flex-row pt-6 pb-6 items-center justify-center w-full">
     {% set sectionName = entry.servicesType %}
-    {% for entry in craft.entries.section("#{ sectionName }") %}
+    {% for entry in craft.entries.section("#{ sectionName }").all() %}
     {% set i = loop.index %}
     {% set navigationBackground = entry.navigationBackground.one() %}
         <div id="navCard" class="navCard flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 hover:border-orange-vv" style="background: linear-gradient(
