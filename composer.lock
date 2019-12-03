@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d16d0a5982c30964f27f09fe53172b37",
+    "content-hash": "ee573d28aeb1c59c13bb8a1d97e7aacd",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -372,16 +372,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.16.3",
+            "version": "3.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "46871fbfdffaa70e6ea4dc7ab20b5332e0974189"
+                "reference": "a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/46871fbfdffaa70e6ea4dc7ab20b5332e0974189",
-                "reference": "46871fbfdffaa70e6ea4dc7ab20b5332e0974189",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9",
+                "reference": "a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +462,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-11-26T14:27:53+00:00"
+            "time": "2019-12-03T20:23:49+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4109,16 +4109,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.28",
+            "version": "5.4.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "f1b08aa203cb4731a5c4c9d9328b6fc329341acf"
+                "reference": "acc2404cb1d8012b8242d3b52460e363225281d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/f1b08aa203cb4731a5c4c9d9328b6fc329341acf",
-                "reference": "f1b08aa203cb4731a5c4c9d9328b6fc329341acf",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/acc2404cb1d8012b8242d3b52460e363225281d5",
+                "reference": "acc2404cb1d8012b8242d3b52460e363225281d5",
                 "shasum": ""
             },
             "require": {
@@ -4179,7 +4179,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-11-17T21:08:41+00:00"
+            "time": "2019-12-02T01:00:16+00:00"
         },
         {
             "name": "voku/stop-words",
