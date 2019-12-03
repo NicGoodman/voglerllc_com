@@ -16,7 +16,7 @@
     {% for entry in craft.entries.section("#{ sectionName }").all() %}
     {% set i = loop.index %}
     {% set navigationBackground = entry.navigationBackground.one() %}
-        <div id="navCard" class="navCard flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 hover:border-orange-vv" style="background: linear-gradient(
+        <div id="navCard" class="navCard flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 hover:border-orange-vv hover:cursor-pointer" style="background: linear-gradient(
             rgba(44, 55, 71, .45),
             rgba(44, 55, 71, .45)
           ), url('{{ navigationBackground.getUrl }}') center; background-size:cover;" data-related="{{ i }}">
