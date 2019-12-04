@@ -3,14 +3,14 @@
 
 {% if backgroundImage %}
     {% set imgStyles = "background: linear-gradient(
-        rgba(44, 55, 71, .45),
-        rgba(44, 55, 71, .45)
-      ), url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
+        rgba(44, 55, 71, .20),
+        rgba(44, 55, 71, .20)
+      ), url('" ~ backgroundImage.getUrl() ~ "')"|raw %}
 
     {% if backgroundImage.hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
         {% set y = backgroundImage.focalPoint | last * 100 ~ '%' %}
-        {% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
+        {% set imgStyles = imgStyles ~ ', ' ~ [x, y]|join(' '); %}
     {% endif %}
 {% endif %}
 
