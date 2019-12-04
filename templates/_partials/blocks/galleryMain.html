@@ -14,7 +14,7 @@
     {% set image = entry.galleryImage.one() %}
     {% set altText = entry.galleryImage.one().title %}
     <a href="#" data-featherlight="{{ image.getUrl }}">
-      <img src="{{ imageThumb.placeholderBox() }}" data-srcset="{{ imageThumb.srcset() }}" sizes="100vw" alt="{{ altText }}" class="lazyload flex-1 m-3 w-full rounded-lg shadow-lg border-white border-2 hover:border-orange-vv" />
+      <img src="{{ imageThumb.placeholderBox() }}" data-srcset="{{ imageThumb.srcset() }}" sizes="100vw" alt="{{ altText }}" class="lazyload flex-1 m-3 h-64 rounded-lg shadow-lg border-white border-2 hover:border-orange-vv" />
     </a>
   {% endfor %}
 </article>
