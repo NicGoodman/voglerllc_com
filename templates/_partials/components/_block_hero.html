@@ -4,7 +4,8 @@
 {% if backgroundImage %}
     {% set imgStyles = "background: linear-gradient(
         rgba(44, 55, 71, .45),
-        rgba(44, 55, 71, .45), url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
+        rgba(44, 55, 71, .45)
+      ), url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
 
     {% if backgroundImage.hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
@@ -12,6 +13,7 @@
         {% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
     {% endif %}
 {% endif %}
+
 <div id="hero" class="flex flex-col w-screen h-screen bg-cover" style="{{ imgStyles is defined ? imgStyles }}">
   <h1 class="m-auto w-2/3 font-montserrat xl:text-4xl lg:text-3xl text-2xl text-white text-center font-bold leading-normal">
     {% if entry.section.handle == 'portfolio' or entry.section.handle == 'blog' %}
