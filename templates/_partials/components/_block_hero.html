@@ -10,7 +10,7 @@
     {% if backgroundImage.hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
         {% set y = backgroundImage.focalPoint | last * 100 ~ '%' %}
-        {% set imgStyles = imgStyles ~ ', ' ~ [x, y]|join(' '); %}
+        {% set imgStyles = imgStyles ~ ', ' ~ [x, y]|join(' ') %}
     {% endif %}
 {% endif %}
 
