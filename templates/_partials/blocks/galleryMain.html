@@ -9,5 +9,12 @@
   {% for block in entry.pageContent.all() %}
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
 	{% endfor %}
+  {% for entry in craft.entries.section('photos').all() %}
+    {% set imageThumb = entry.galleryImage.one().optimizedImages %}
+    {% set image = entry.galleryImage.one() %}
+    <a href="#" data-featherlight="{{ image.getUrl }}">
+      <img src="{{ imageThumb.placeholderBox() }}" data-srcset="{{ imageThumb.srcset() }}" sizes="100vw" alt="{{ altText }}" class="lazyload w-full" />
+    </a>
+  {% endfor %}
 </article>
 {% endblock %}
