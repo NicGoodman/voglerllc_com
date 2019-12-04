@@ -12,6 +12,7 @@
   {% for entry in craft.entries.section('photos').all() %}
     {% set imageThumb = entry.galleryImage.one().optimizedImages %}
     {% set image = entry.galleryImage.one() %}
+    {% set altText = entry.galleryImage.one().title %}
     <a href="#" data-featherlight="{{ image.getUrl }}">
       <img src="{{ imageThumb.placeholderBox() }}" data-srcset="{{ imageThumb.srcset() }}" sizes="100vw" alt="{{ altText }}" class="lazyload w-full" />
     </a>
