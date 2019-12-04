@@ -9,24 +9,26 @@
   {% for block in entry.pageContent.all() %}
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
 	{% endfor %}
-  <div id="photos" class="photos flex flex-wrap justify-center mx-auto w-screen xl:pl-32 xl:pr-32 md:pl-6 md:pr-6 pl-3 pr-3 pt-12 pb-12 border-t-2 border-white break-words">
-    <button id="all-button" type="button" data-filter="all" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+  <div id="photos" class="photos flex flex-wrap justify-center xl:pl-32 xl:pr-32 md:pl-6 md:pr-6 pl-3 pr-3 pt-12 pb-12 border-t-2 border-white break-words">
+    <div id="photo-sort-buttons" class="flex flex-wrap justify-center">
+    <button id="all-button" type="button" data-filter="all" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
   		<h3>All</h3>
   	</button>
-  	<button id="landscaping-button" type="button" data-filter=".landscaping" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+  	<button id="landscaping-button" type="button" data-filter=".landscaping" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
   		<h3>Landscaping & Stone</h3>
   	</button>
-  	<button id="forestry-mulching-button" type="button" data-filter=".mulching" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+  	<button id="forestry-mulching-button" type="button" data-filter=".mulching" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
   		<h3>Forestry Mulching</h3>
-    <button id="tree-services-button" type="button" data-filter=".forestry" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+    <button id="tree-services-button" type="button" data-filter=".forestry" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
     		<h3>Tree Services & Forestry</h3>
   	</button>
-    <button id="grading-excavating-button" type="button" data-filter=".grading" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+    <button id="grading-excavating-button" type="button" data-filter=".grading" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
     		<h3>Grading & Excavating</h3>
   	</button>
-    <button id="land-planning-button" type="button" data-filter=".planning" class="flex-no-grow h-10 w-56 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
+    <button id="land-planning-button" type="button" data-filter=".planning" class="flex-no-grow h-10 w-64 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
     		<h3>Land Planning & Design</h3>
   	</button>
+    </div>
   {% for entry in craft.entries.section('photos').all() %}
     {% set imageThumb = entry.galleryImage.one().optimizedImages %}
     {% set image = entry.galleryImage.one() %}
