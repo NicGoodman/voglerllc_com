@@ -9,12 +9,12 @@
   {% for block in entry.pageContent.all() %}
     {% include ('_partials/components/_block_' ~ block.type.handle) %}
 	{% endfor %}
-  <div id="photos" class="flex flex-wrap justify-center mx-auto w-screen xl:pl-32 xl:pr-32 md:pl-6 md:pr-6 pl-3 pr-3 pt-12 pb-12 border-t-2 border-white break-words">
+  <div id="photos" class="photos flex flex-wrap justify-center mx-auto w-screen xl:pl-32 xl:pr-32 md:pl-6 md:pr-6 pl-3 pr-3 pt-12 pb-12 border-t-2 border-white break-words">
   {% for entry in craft.entries.section('photos').all() %}
     {% set imageThumb = entry.galleryImage.one().optimizedImages %}
     {% set image = entry.galleryImage.one() %}
     {% set altText = entry.galleryImage.one().title %}
-    <a href="#" data-featherlight="{{ image.getUrl }}">
+    <a href="#" data-featherlight="{{ image.getUrl }}" class="mix {% for tag in entry.galleryImageType %}{{ tag }} {% endfor %}">
       <img src="{{ imageThumb.placeholderBox() }}" data-srcset="{{ imageThumb.srcset() }}" sizes="100vw" alt="{{ altText }}" class="lazyload flex-1 m-3 h-64 rounded-lg shadow-lg border-white border-2 hover:border-orange-vv" />
     </a>
   {% endfor %}

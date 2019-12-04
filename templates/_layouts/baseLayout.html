@@ -88,6 +88,19 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/noelboss/featherlight@master/src/featherlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="{{ siteUrl }}assets/js/mixitup-3/dist/mixitup.min.js"></script>
+<script>
+	var containerEl = document.querySelector('.photos');
+	var mixer = mixitup(containerEl, {
+		animation: {
+			duration: 250,
+			nudge: true,
+			reverseOut: true,
+			easing: 'ease-in-out',
+			effects: 'fade'
+		}
+	});
+</script>
 </body>
 
 </html>
