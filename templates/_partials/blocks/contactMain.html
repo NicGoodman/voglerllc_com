@@ -16,7 +16,7 @@
   <div id="forms" class="flex flex-wrap justify-center mx-auto w-full lg:w-3/4 xl:w-2/3 m-3 p-6 max-w-md flex-1 rounded-lg shadow-lg border-white border-2 font-raleway text-xs lg:text-sm font-medium leading-tight text-blue-darkest bg-orange-vv">
     {% macro errorList(errors) %}
     {% if errors %}
-    <ul class="errors">
+    <ul class="errors flex-wrap">
       {% for error in errors %}
       <li>{{ error }}</li>
       {% endfor %}
