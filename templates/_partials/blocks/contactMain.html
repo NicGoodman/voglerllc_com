@@ -29,6 +29,7 @@
     <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full justify-center">
       {{ csrfInput() }}
       <input type="hidden" name="action" value="contact-form/send">
+      {{ redirectInput('contact#forms') }}
       {% if craft.app.session.hasFlash('notice') %}
     <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
 {% elseif craft.app.session.hasFlash('error') %}
