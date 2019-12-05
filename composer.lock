@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee573d28aeb1c59c13bb8a1d97e7aacd",
+    "content-hash": "4e5f9bc431bb6ed6613959be08d89fa6",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -980,6 +980,55 @@
             ],
             "description": "An SVG sanitizer for PHP",
             "time": "2019-11-07T09:16:31+00:00"
+        },
+        {
+            "name": "ether/tags",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ethercreative/tags.git",
+                "reference": "cb8038bf257f40229f1e5763f61c88a6608e85c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ethercreative/tags/zipball/cb8038bf257f40229f1e5763f61c88a6608e85c5",
+                "reference": "cb8038bf257f40229f1e5763f61c88a6608e85c5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC17"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Tags",
+                "handle": "tag-manager",
+                "changelogUrl": "https://raw.githubusercontent.com/ethercreative/tags/master/CHANGELOG.md",
+                "class": "ether\\tagManager\\TagManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ether\\tagManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ether Creative",
+                    "homepage": "https://ethercreative.co.uk"
+                }
+            ],
+            "description": "A tag manager for Craft 3",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "tags"
+            ],
+            "time": "2019-06-26T12:04:24+00:00"
         },
         {
             "name": "experience/smartdown",
