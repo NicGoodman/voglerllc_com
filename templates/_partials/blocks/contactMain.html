@@ -29,6 +29,11 @@
     <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full justify-center">
       {{ csrfInput() }}
       <input type="hidden" name="action" value="contact-form/send">
+      {% if craft.app.session.hasFlash('notice') %}
+    <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+{% elseif craft.app.session.hasFlash('error') %}
+    <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+{% endif %}
       <div class="w-full md:w-1/2 flex items-center py-2 p-3">
         <input id="from-name" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
         {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
