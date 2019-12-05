@@ -31,13 +31,13 @@
 
     {% from _self import errorList %}
 
-    <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full">
+    <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full justify-center">
       {{ csrfInput() }}
-      <div class="w-1/2 flex items-center py-2 p-3">
+      <div class="w-full md:w-1/2 flex items-center py-2 p-3">
         <input class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
         {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
       </div>
-      <div class="w-1/2 flex items-center py-2 p-3">
+      <div class="w-full md:w-1/2 flex items-center py-2 p-3">
         <input class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
         {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
       </div>
