@@ -6,7 +6,7 @@
 <article id="contactMainContent" class="flex flex-wrap justify-center mx-auto w-screen xl:pl-32 xl:pr-32 md:pl-6 md:pr-6 pl-3 pr-3 pt-12 pb-12 border-t-2 border-white w-full">
   <h2 class="m-auto w-full pb-6 font-montserrat xl:text-3xl lg:text-2xl sm:text-xl text-white text-center font-bold leading-normal">{{ entry.pageHeader }}</h2>
   <p class="w-full lg:w-3/4 xl:w-2/3 text-white font-raleway text-base font-normal text-center tracking-wide leading-normal pb-6">{{ entry.pageIntro }}</p>
-  <div id="contactButtons" class="w-full flex flex-row justify-center">
+  <div id="contactButtons" class="w-full flex flex-wrap justify-center">
     <a href="tel:1-828-777-6637">
     <button class="flex-no-grow h-10 w-48 m-3 bg-transparent hover:bg-white text-white hover:text-blue-darkest border-2 border-white rounded-full leading-none font-montserrat font-bold">
       Call Us Now!
@@ -19,29 +19,39 @@
     </a>
   </div>
   <div id="forms" class="flex flex-wrap justify-center mx-auto w-full lg:w-3/4 xl:w-2/3 m-3 p-6 max-w-md flex-1 rounded-lg shadow-lg border-white border-2 font-raleway text-xs lg:text-sm font-medium leading-tight text-blue-darkest bg-orange-vv">
-    <form class="w-1/2">
-      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
-        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" aria-label="Full name">
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% from _self import errorList %}
+
+  <form method="post" action="" accept-charset="UTF-8">
+        {{ csrfInput() }}
+      <div class="w-1/2 flex items-center border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
+        {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
       </div>
-    </form>
-    <form class="w-1/2">
-      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
-        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" aria-label="Email">
+      <div class="w-1/2 flex items-center border-b-2 border-blue-darkest py-2 m-3">
+        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
       </div>
-    </form>
-    <form class="w-full">
-      <div class="flex items-left border-b-2 border-blue-darkest py-2 m-3">
+      <div class="w-full flex items-left border-b-2 border-blue-darkest py-2 m-3">
         <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Subject" aria-label="Subject">
       </div>
-    </form>
-    <form class="w-full">
-      <div class="flex items-center border-b-2 border-blue-darkest py-2 m-3">
-        <input class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Message" aria-label="Message">
+      <div class="w-full flex items-center border-2 border-blue-darkest py-2 m-3">
+        <textarea class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" rows="10" cols="40" id="message" placeholder="Message" name="message">{{ message.message ?? '' }}</textarea>
+        {{ message is defined and message ? errorList(message.getErrors('message')) }}
       </div>
-    </form>
     <button id="getInTouch" class="flex-no-grow h-10 w-48 mt-3 bg-transparent hover:bg-blue-vv text-blue-darkest hover:text-white border-2 border-blue-darkest rounded-full leading-none font-montserrat font-bold">
-      Submit
+      <input type="submit" value="Send">
     </button>
+    </form>
   </div>
   <!--<div id="imageColumn" class="w-full lg:w-1/2 m-3">
     <img src="uploads/images/stumphoe.jpg" class="w-full h-full rounded-lg border-2 border-white shadow-lg" />
