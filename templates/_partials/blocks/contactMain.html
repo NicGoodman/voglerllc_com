@@ -34,15 +34,18 @@
     <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full justify-center">
       {{ csrfInput() }}
       <div class="w-full md:w-1/2 flex items-center py-2 p-3">
-        <input class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
+        <label for="from-name">Your Name</label>
+        <input id="from-name" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
         {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
       </div>
       <div class="w-full md:w-1/2 flex items-center py-2 p-3">
-        <input class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+        <label for="from-email">Your email</label>
+        <input id="from-email" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Email Address" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
         {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
       </div>
       <div class="w-full flex items-center border-2 border-blue-darkest py-2 m-3">
-        <textarea class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" rows="10" cols="40" id="message" placeholder="Message" name="message">{{ message.message ?? '' }}</textarea>
+        <label for="message">Message</label>
+        <textarea id="message" class="appearance-none bg-transparent border-none w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" rows="10" cols="40" id="message" placeholder="Message" name="message">{{ message.message ?? '' }}</textarea>
         {{ message is defined and message ? errorList(message.getErrors('message')) }}
       </div>
       <button id="getInTouch" type="submit" value="Send" class="focus:outline-none flex-no-grow h-10 w-48 mt-3 bg-transparent hover:bg-blue-vv text-blue-darkest hover:text-white border-2 border-blue-darkest rounded-full leading-none font-montserrat font-bold">
