@@ -6,7 +6,7 @@
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
   {% set location = entry.projectLocation %}
-  {% set finishDate = entry.projectFinishDate|date('F/Y') %}
+  {% set finishDate = entry.projectFinishDate|date('F Y') %}
   <div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-2/3 xl:w-1/2 border-t-2 border-white pt-8">
     <div id="left-quote" class="flex flex-col w-1/6 justify-start px-3">
       <i class="fas fa-quote-left text-3xl md:text-5xl text-yellow-vv text-right"></i>
