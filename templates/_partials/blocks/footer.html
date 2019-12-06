@@ -1,22 +1,4 @@
 {% block footer %}
-<div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-1/2 self-center">
-  {% for entry in craft.entries.section('testimonials').limit(1).order('RAND()') %}
-  {% set author = entry.clientName %}
-  {% set testimonial = entry.testimonialText %}
-  <div id="left-quote" class="flex flex-col w-1/6 justify-start">
-    <i class="fas fa-quote-left text-4xl text-white text-right"></i>
-  </div>
-  <div id="testimonial-content" class="flex flex-col w-2/3 justify-center text-center font-montserrat font-bold text-lg text-white pb-3">
-    {{ testimonial }}
-  </div>
-  <div id="right-quote" class="flex flex-col w-1/6 justify-end">
-    <i class="fas fa-quote-right text-4xl text-white text-left"></i>
-  </div>
-  <div id="testimonial-author" class="w-full text-center font-montserrat font-bold text-xl text-white">
-    - {{ author }}
-  </div>
-  {% endfor %}
-</div>
 <div id="footer" class="flex flex-col md:flex-row w-screen h-64 pb-6 md:pb-0 mt-6 content-center items-center justify-center bg-blue-darkest bg-cover border-t-2 border-white" style="background-image: url('{{ siteUrl }}uploads/images/footerBg2x.png')">
   <div id="footerText" class="flex flex-col justify-center w-auto md:h-48 md:mr-6 md:pr-6 pb-3 md:pb-0 border-r-0 md:border-r-2 border-b-2 md:border-b-0 border-white">
     <h3 class="text-white text-center md:text-right font-montserrat text-base lg:text-lg">828.777.6637 • 423.721.6077<br>
