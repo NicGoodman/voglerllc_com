@@ -29,6 +29,8 @@
       {{ csrfInput() }}
       <input type="hidden" name="action" value="contact-form/send">
       {{ redirectInput('contact#forms') }}
+      <input type="hidden" name="action" value="contact-form/error">
+      {{ redirectInput('contact#forms') }}
       {% if craft.app.session.hasFlash('notice') %}
       <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
       {% elseif craft.app.session.hasFlash('error') %}
