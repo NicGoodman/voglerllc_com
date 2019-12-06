@@ -1,17 +1,17 @@
 {% block testimonial %}
 <div id="testimonial-container" class="flex flex-row w-screen justify-center mb-6">
-<div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-1/2 border-t-2 border-white pt-3">
+<div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-1/2 border-t-2 border-white pt-6">
   {% for entry in craft.entries.section('testimonials').limit(1).order('RAND()') %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
   <div id="left-quote" class="flex flex-col w-1/6 justify-start pr-2">
-    <i class="fas fa-quote-left text-5xl text-white text-right"></i>
+    <i class="fas fa-quote-left text-5xl text-yellow-vv text-right"></i>
   </div>
   <div id="testimonial-content" class="flex flex-col w-2/3 justify-center text-center font-montserrat font-bold text-lg text-white pb-3">
     {{ testimonial }}
   </div>
   <div id="right-quote" class="flex flex-col w-1/6 justify-end pl-1">
-    <i class="fas fa-quote-right text-5xl text-white text-left"></i>
+    <i class="fas fa-quote-right text-5xl text-yellow-vv text-left"></i>
   </div>
   <div id="testimonial-author" class="w-full text-center font-montserrat font-bold text-xl text-white">
     - {{ author }}
