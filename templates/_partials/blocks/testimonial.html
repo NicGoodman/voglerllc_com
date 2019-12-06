@@ -1,7 +1,7 @@
 {% block testimonial %}
 <div id="testimonial-container" class="flex flex-row w-screen justify-center my-12">
 <div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-2/3 xl:w-1/2 border-t-2 border-white pt-8">
-  {% for entry in craft.entries.section('testimonials').limit(1).relatedTo(craft.tags().group('projectPostTags').title(entry.projectType)).order('RAND()') %}
+  {% for entry in craft.entries.section('testimonials').limit(1).relatedTo(craft.tags().group('projectPostTags').title(projectType)).order('RAND()') %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
   <div id="left-quote" class="flex flex-col w-1/6 justify-start px-3">
