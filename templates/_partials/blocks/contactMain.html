@@ -27,7 +27,7 @@
     {% from _self import errorList %}
     <form method="post" action="" accept-charset="UTF-8" class="flex flex-wrap w-full justify-center">
       {{ csrfInput() }}
-      <input type="hidden" name="action" value="contact-form/send">
+      <input type="hidden" name="action" value="">
       {{ redirectInput('contact#forms') }}
       {% if craft.app.session.hasFlash('notice') %}
       <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
@@ -35,25 +35,24 @@
       <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
       {% endif %}
       <div class="w-full md:w-1/2 flex flex-col items-center py-2 p-3 text-left">
+        <input id="from-name" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
         <div class="w-full h-6">
           {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
         </div>
-        <input id="from-name" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="text" placeholder="Name" name="fromName" value="{{ message.fromName ?? '' }}">
       </div>
       <div class="w-full md:w-1/2 flex flex-col items-center py-2 p-3 text-left">
-        <div class="w-full h-6">
-          {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
-        </div>
         <input id="from-email" class="appearance-none bg-transparent border-b-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" type="email" placeholder="Email Address" name="fromEmail"
           value="{{ message.fromEmail ?? '' }}">
+          <div class="w-full h-6">
+            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+          </div>
       </div>
       <div class="w-full flex flex-col items-center py-2 m-3 text-left">
-        <div class="w-full h-6">
-          {{ message is defined and message ? errorList(message.getErrors('message')) }}
-        </div>
         <textarea id="message" class="appearance-none bg-transparent border-2 border-blue-darkest w-full text-blue-darkest mr-3 py-1 px-2 leading-none font-montserrat focus:outline-none" rows="10" cols="40" id="message" placeholder="Message{{ message.message ?? '' }}"
           name="message"></textarea>
-
+          <div class="w-full h-6">
+            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+          </div>
       </div>
       <button id="getInTouch" type="submit" value="Send" class="focus:outline-none flex-no-grow h-10 w-48 mt-3 bg-transparent hover:bg-blue-vv text-blue-darkest hover:text-white border-2 border-blue-darkest rounded-full leading-none font-montserrat font-bold">
         Submit
