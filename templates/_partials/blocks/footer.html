@@ -1,10 +1,10 @@
 {% block footer %}
-<div id="testimonial-block" class="flex flex-col ">
+<div id="testimonial-block" class="flex flex-col text-center font-montserrat font-bold text-xl text-white pb-3 w-full lg:w-1/2">
   {% for entry in craft.entries.section('testimonials').limit(1).order('RAND()') %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
-  <p class="text-center font-montserrat font-bold text-xl text-white pb-3"><i class="fas fa-quote-left"></i>{{ testimonial }}<i class="fas fa-quote-right"></i></p>
-  <p class="text-center font-montserrat font-normal text-xl text-white pb-3">- {{ author }}</p>
+  <i class="fas fa-quote-left"></i>{{ testimonial }}<i class="fas fa-quote-right"></i>
+  - {{ author }}
   {% endfor %}
   </div>
 <div id="footer" class="flex flex-col md:flex-row w-screen h-64 pb-6 md:pb-0 mt-6 content-center items-center justify-center bg-blue-darkest bg-cover border-t-2 border-white" style="background-image: url('{{ siteUrl }}uploads/images/footerBg2x.png')">
