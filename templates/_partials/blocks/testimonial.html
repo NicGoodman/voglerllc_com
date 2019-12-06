@@ -5,6 +5,8 @@
   {% for entry in craft.entries.section('testimonials').relatedTo(serviceType).order('RAND()').limit(1) %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
+  {% set location = entry.projectLocation %}
+  {% set finishDate = entry.projectFinishDate|date('F/Y') %}
   <div id="testimonial-block" class="flex flex-row flex-wrap w-full lg:w-2/3 xl:w-1/2 border-t-2 border-white pt-8">
     <div id="left-quote" class="flex flex-col w-1/6 justify-start px-3">
       <i class="fas fa-quote-left text-3xl md:text-5xl text-yellow-vv text-right"></i>
@@ -17,6 +19,9 @@
     </div>
     <div id="testimonial-author" class="w-full text-center font-montserrat font-bold text-base md:text-xl text-white">
       - {{ author }}
+    </div>
+    <div id="testimonial-location-date" class="w-full text-center font-montserrat font-normal text-sm md:text-base text-white">
+    {{ location }} • {{ finishDate }}
     </div>
     {% endfor %}
   </div>
