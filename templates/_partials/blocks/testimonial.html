@@ -2,7 +2,7 @@
 {% set serviceType = entry.projectType.one() %}
 
 <div id="testimonial-container" class="flex flex-row w-screen justify-center my-12">
-  {% for entry in craft.entries.section('testimonials').all().relatedTo(serviceType).orderBy('RAND()').limit(1) %}
+  {% for entry in craft.entries.section('testimonials').relatedTo(serviceType).orderBy('RAND()').limit(1) %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
   {% set location = entry.projectLocation %}
