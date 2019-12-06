@@ -1,7 +1,7 @@
 {% block footer %}
-<div id="testimonial-block" class="self-center">
-<i class="fas fa-quote-left text-3xl text-white"></i>
-<div id="testimonial-content" class="flex flex-col text-center font-montserrat font-bold text-xl text-white pb-3 w-full lg:w-1/2">
+<div id="testimonial-block" class="flex flex-col w-full lg:w-1/2 self-center">
+<i class="fas fa-quote-left text-3xl text-white text-left"></i>
+<div id="testimonial-content" class="flex flex-col text-center font-montserrat font-bold text-xl text-white pb-3">
   {% for entry in craft.entries.section('testimonials').limit(1).order('RAND()') %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
@@ -9,7 +9,7 @@
   - {{ author }}
   {% endfor %}
   </div>
-  <i class="fas fa-quote-right text-3xl text-white"></i>
+  <i class="fas fa-quote-right text-3xl text-white text-right"></i>
   </div>
 <div id="footer" class="flex flex-col md:flex-row w-screen h-64 pb-6 md:pb-0 mt-6 content-center items-center justify-center bg-blue-darkest bg-cover border-t-2 border-white" style="background-image: url('{{ siteUrl }}uploads/images/footerBg2x.png')">
   <div id="footerText" class="flex flex-col justify-center w-auto md:h-48 md:mr-6 md:pr-6 pb-3 md:pb-0 border-r-0 md:border-r-2 border-b-2 md:border-b-0 border-white">
