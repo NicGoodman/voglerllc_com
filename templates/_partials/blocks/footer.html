@@ -1,6 +1,6 @@
 {% block footer %}
 <div id="testimonial-block" class="flex flex-col ">
-  {% for entry in craft.entires.section('testimonials').limit(1).order('RAND()') %}
+  {% for entry in craft.entries.section('testimonials').limit(1).order('RAND()') %}
   {% set author = entry.clientName %}
   {% set testimonial = entry.testimonialText %}
   <p class="text-center font-montserrat font-bold text-xl text-white pb-3"><i class="fas fa-quote-left"></i>{{ testimonial }}<i class="fas fa-quote-right"></i></p>
