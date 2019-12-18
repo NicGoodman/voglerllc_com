@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "362dc482b3a8f62eafbd67b548031b43",
+    "content-hash": "0a6dba6f9b372f7224bed7b9ef96b126",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -117,16 +117,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
             },
             "type": "library",
             "extra": {
@@ -169,7 +169,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-08-30T08:44:50+00:00"
+            "time": "2019-12-11T14:44:42+00:00"
         },
         {
             "name": "composer/composer",
@@ -372,16 +372,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.17",
+            "version": "3.3.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9"
+                "reference": "47beab74bcc1e3341a19f69f0e20b5f4092bc877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9",
-                "reference": "a6d67d9a4317a0ac338cfddb2abd7a4fa78678a9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/47beab74bcc1e3341a19f69f0e20b5f4092bc877",
+                "reference": "47beab74bcc1e3341a19f69f0e20b5f4092bc877",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,7 @@
                 "craftcms/server-check": "~1.1.0",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "elvanto/litemoji": "^1.3.1",
-                "enshrined/svg-sanitize": "~0.13.0",
+                "enshrined/svg-sanitize": "~0.13.2",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-json": "*",
@@ -400,7 +400,7 @@
                 "ext-pcre": "*",
                 "ext-pdo": "*",
                 "ext-zip": "*",
-                "guzzlehttp/guzzle": "^6.3.0",
+                "guzzlehttp/guzzle": ">=6.3.0 <6.5.0 || ^6.5.1",
                 "league/flysystem": "^1.0.35",
                 "league/oauth2-client": "^2.2.1",
                 "mikehaertl/php-shellcommand": "^1.2.5",
@@ -462,20 +462,20 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-12-03T20:23:49+00:00"
+            "time": "2019-12-17T23:46:45+00:00"
         },
         {
             "name": "craftcms/contact-form",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/contact-form.git",
-                "reference": "a645df88d757d620bc29bc6dd3d748374b791093"
+                "reference": "680986ad8742b3e402d0f56756e3eb85c33d0b3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/a645df88d757d620bc29bc6dd3d748374b791093",
-                "reference": "a645df88d757d620bc29bc6dd3d748374b791093",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/680986ad8742b3e402d0f56756e3eb85c33d0b3d",
+                "reference": "680986ad8742b3e402d0f56756e3eb85c33d0b3d",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +513,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2019-05-31T22:56:39+00:00"
+            "time": "2019-12-17T23:54:03+00:00"
         },
         {
             "name": "craftcms/contact-form-honeypot",
@@ -829,16 +829,16 @@
         },
         {
             "name": "dgrigg/craft-migration-assistant",
-            "version": "3.1.0.1",
+            "version": "3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dgrigg/craft-migration-assistant.git",
-                "reference": "73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5"
+                "reference": "82f525cffb73bd23258eb5270e480a3a4cee931b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dgrigg/craft-migration-assistant/zipball/73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5",
-                "reference": "73e7cab2012e54ae3f99b5b70e1785a20bb5e5f5",
+                "url": "https://api.github.com/repos/dgrigg/craft-migration-assistant/zipball/82f525cffb73bd23258eb5270e480a3a4cee931b",
+                "reference": "82f525cffb73bd23258eb5270e480a3a4cee931b",
                 "shasum": ""
             },
             "require": {
@@ -880,7 +880,7 @@
                 "migration assistant",
                 "migration manager"
             ],
-            "time": "2019-03-09T02:15:05+00:00"
+            "time": "2019-09-20T15:55:26+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1040,16 +1040,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.13.0",
+            "version": "0.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "4cf8d0f61edf9f00b84e162fc229176a362da247"
+                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/4cf8d0f61edf9f00b84e162fc229176a362da247",
-                "reference": "4cf8d0f61edf9f00b84e162fc229176a362da247",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/19e85021505b29f3055c1f57a620ee4aa5c24113",
+                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113",
                 "shasum": ""
             },
             "require": {
@@ -1077,7 +1077,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2019-11-07T09:16:31+00:00"
+            "time": "2019-12-09T09:24:04+00:00"
         },
         {
             "name": "ether/tags",
@@ -1583,16 +1583,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.57",
+            "version": "1.0.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a"
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
-                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4fb13c01784a6c9f165a351e996871488ca2d8c9",
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1663,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-10-16T21:01:05+00:00"
+            "time": "2019-12-08T21:46:50+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1939,16 +1939,16 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v6.5.1",
+            "version": "v6.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "fc135154e8186cdff79eb4258dcfc55fca9cf674"
+                "reference": "ce039dc8826038f898e5338e5df1c4bafddc0c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/fc135154e8186cdff79eb4258dcfc55fca9cf674",
-                "reference": "fc135154e8186cdff79eb4258dcfc55fca9cf674",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/ce039dc8826038f898e5338e5df1c4bafddc0c6e",
+                "reference": "ce039dc8826038f898e5338e5df1c4bafddc0c6e",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2019-07-08T19:56:14+00:00"
+            "time": "2019-12-07T12:39:54+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize",
@@ -2198,16 +2198,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.35",
+            "version": "3.2.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8376d6d59bfe8ef164773b021088fa35615a50d2"
+                "reference": "f785d74100092274fc81fe6d8f8e3e50a6c11e69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8376d6d59bfe8ef164773b021088fa35615a50d2",
-                "reference": "8376d6d59bfe8ef164773b021088fa35615a50d2",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f785d74100092274fc81fe6d8f8e3e50a6c11e69",
+                "reference": "f785d74100092274fc81fe6d8f8e3e50a6c11e69",
                 "shasum": ""
             },
             "require": {
@@ -2268,7 +2268,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-11-26T18:08:15+00:00"
+            "time": "2019-12-11T18:27:39+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4040,21 +4040,21 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.19",
+            "version": "4.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "8acdad8a3ad4c70d04cd6925811b28d06d776ca1"
+                "reference": "9a70c342ae0e13eaca7428810a9f7daac2712e50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/8acdad8a3ad4c70d04cd6925811b28d06d776ca1",
-                "reference": "8acdad8a3ad4c70d04cd6925811b28d06d776ca1",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/9a70c342ae0e13eaca7428810a9f7daac2712e50",
+                "reference": "9a70c342ae0e13eaca7428810a9f7daac2712e50",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0",
-                "voku/portable-utf8": "~5.4.25"
+                "voku/portable-utf8": "~5.4.27"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0"
@@ -4093,7 +4093,7 @@
                 "security",
                 "xss"
             ],
-            "time": "2019-11-11T14:48:30+00:00"
+            "time": "2019-12-07T22:27:15+00:00"
         },
         {
             "name": "voku/arrayy",
@@ -4207,16 +4207,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.3.5",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "056000d679a44b06ee61a63114f587cde066b1a8"
+                "reference": "8b26da3760a6de80eb319493a7e4684f80097e41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/056000d679a44b06ee61a63114f587cde066b1a8",
-                "reference": "056000d679a44b06ee61a63114f587cde066b1a8",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/8b26da3760a6de80eb319493a7e4684f80097e41",
+                "reference": "8b26da3760a6de80eb319493a7e4684f80097e41",
                 "shasum": ""
             },
             "require": {
@@ -4252,20 +4252,20 @@
                 "clean",
                 "php"
             ],
-            "time": "2019-11-11T16:55:47+00:00"
+            "time": "2019-12-13T02:54:15+00:00"
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.29",
+            "version": "5.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "acc2404cb1d8012b8242d3b52460e363225281d5"
+                "reference": "527aa7e8164ea1f2b6084b1483d8e89a5fc3311b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/acc2404cb1d8012b8242d3b52460e363225281d5",
-                "reference": "acc2404cb1d8012b8242d3b52460e363225281d5",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/527aa7e8164ea1f2b6084b1483d8e89a5fc3311b",
+                "reference": "527aa7e8164ea1f2b6084b1483d8e89a5fc3311b",
                 "shasum": ""
             },
             "require": {
@@ -4275,7 +4275,7 @@
                 "symfony/polyfill-intl-normalizer": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php72": "~1.0",
-                "voku/portable-ascii": "~1.3"
+                "voku/portable-ascii": "~1.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0"
@@ -4326,7 +4326,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-12-02T01:00:16+00:00"
+            "time": "2019-12-13T03:10:14+00:00"
         },
         {
             "name": "voku/stop-words",
