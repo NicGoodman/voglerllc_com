@@ -1,10 +1,10 @@
 {% block navigation %}
-<div id="navFullScreen" class="w-screen h-screen bg-blue-vv fixed" style=
+<div id="navFullScreen" class="w-screen h-screen overflow-scroll bg-blue-vv fixed" style=
 "display: none">
   <div id="navHeader" class="flex flex-row justify-end mx-auto w-screen h-32 pl-6 pr-6 border-b-2 border-white">
     <i onclick="showNav()" class="fas fa-times self-center text-white text-4xl cursor-pointer"></i>
   </div>
-  <div id="navMenu" class="overflow-scroll">
+  <div id="navMenu" class="">
     <ul class="list-reset leading-loose pl-6 pt-6 no-underline font-montserrat font-bold xl:text-3xl lg:text-2xl sm:text-xl text-white">
       <li><a href="{{ siteUrl }}" class="no-underline text-white hover:underline">ABOUT</a></li>
       <li><label>SERVICES</label>
