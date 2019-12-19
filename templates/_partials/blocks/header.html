@@ -1,8 +1,8 @@
 {% block header %}
-<div id="header" class="fixed flex flex-row bg-blue-vv-translucent border-b-2 border-white shadow-lg" style="-webkit-backdrop-filter: blur(4px);">
-  <div id="header-content" class="justify-between mx-auto w-screen h-32 lg:h-48 pl-6 pr-6">
+<div id="header" class="fixed h-32 lg:h-48 bg-blue-vv-translucent border-b-2 border-white shadow-lg" style="-webkit-backdrop-filter: blur(4px);">
+  <div id="header-content" class="flex flex-wrap justify-between mx-auto w-screen pl-6 pr-6">
     <a href="{{ siteUrl }}" class="self-center"><img id="logo" class="w-64 h-auto lg:w-auto lg:h-32" src="{{ siteUrl }}uploads/images/vvLogoWhite.png"/></a>
-    <div id="icons" class="flex md:flex-row flex-col-reverse h-full">
+    <div id="icons" class="flex flex-row h-full">
       <div id="social-icons" class="flex-row py-2 hidden md:flex">
         <a href="https://www.facebook.com/voglerllc" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.pinterest.com/vvland/" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-pinterest"></i></a>
@@ -11,12 +11,12 @@
       </div>
       <i id="navIcon" onclick="showNav()" class="fas fa-bars self-center text-white text-4xl cursor-pointer hover:text-yellow-vv px-4"></i>
     </div>
-  </div>
-  <div id="social-icons" class="flex-row py-2 flex md:hidden w-screen justify-center">
-    <a href="https://www.facebook.com/voglerllc" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.pinterest.com/vvland/" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-pinterest"></i></a>
-    <a href="" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCw3E9DGhfWKaKR46QmI9abA" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-youtube"></i></a>
+    <div id="social-icons" class="flex-row py-2 flex md:hidden w-screen justify-center">
+      <a href="https://www.facebook.com/voglerllc" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.pinterest.com/vvland/" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-pinterest"></i></a>
+      <a href="" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCw3E9DGhfWKaKR46QmI9abA" class="text-white hover:text-orange-vv text-lg md:text-xl cursor-pointer self-center px-2"><i class="fab fa-youtube"></i></a>
+    </div>
   </div>
 </div>
 {% endblock %}
