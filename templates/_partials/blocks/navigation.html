@@ -1,28 +1,28 @@
 {% block navigation %}
-<div id="navFullScreen" class="w-screen h-screen bg-blue-vv fixed" style=
+<div id="navFullScreen" class="w-screen h-screen bg-blue-vv fixed overflow-scroll" style=
 "display: none">
   <div id="navHeader" class="flex flex-row justify-end mx-auto w-screen h-32 pl-6 pr-6 border-b-2 border-white">
     <i onclick="showNav()" class="fas fa-times self-center text-white text-4xl cursor-pointer"></i>
   </div>
-  <div id="navMenu" class="overflow-scroll">
-    <ul class="list-reset leading-loose pl-6 pt-6 no-underline font-montserrat font-bold xl:text-3xl lg:text-2xl sm:text-xl text-white">
+  <div id="navMenu" class="">
+    <ul class="list-reset leading-loose pl-6 pt-6 no-underline font-montserrat font-bold lg:text-2xl sm:text-xl text-white">
       <li><a href="{{ siteUrl }}" class="no-underline text-white hover:underline">ABOUT</a></li>
       <li><label>SERVICES</label>
         <ul class="subMenu list-reset pl-6">
-          <li><a href="/services/stone-landscaping" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">LANDSCAPING & STONE</a></li>
-          <li><a href="/services/forestry-mulching" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">FORESTRY MULCHING</a></li>
-          <li><a href="/services/tree-services" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">TREE SERVICES & FORESTRY</a></li>
-          <li><a href="/services/road-construction" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">GRADING & EXCAVATING</a></li>
-          <li><a href="/services/land-planning-design" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">LAND PLANNING & DESIGN</a></li>
+          <li><a href="/services/stone-landscaping" class="no-underline hover:underline text-white lg:text-lg sm:text-md">LANDSCAPING & STONE</a></li>
+          <li><a href="/services/forestry-mulching" class="no-underline hover:underline text-white lg:text-lg sm:text-md">FORESTRY MULCHING</a></li>
+          <li><a href="/services/tree-services" class="no-underline hover:underline text-white lg:text-lg sm:text-md">TREE SERVICES & FORESTRY</a></li>
+          <li><a href="/services/road-construction" class="no-underline hover:underline text-white lg:text-lg sm:text-md">GRADING & EXCAVATING</a></li>
+          <li><a href="/services/land-planning-design" class="no-underline hover:underline text-white lg:text-lg sm:text-md">LAND PLANNING & DESIGN</a></li>
         </ul>
       </li>
       <li><a href="/portfolio-page" class="no-underline text-white hover:underline">PROJECTS</a></li>
       <li><a href="/photo-gallery" class="no-underline text-white hover:underline">GALLERY</a></li>
       <li><label class="">LEARN</label>
         <ul class="subMenu list-reset pl-6">
-          <li><a href="/resources" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">RESOURCES</a></li>
-          <li><a href="/blog-page" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md">BLOG</a></li>
-          <li><a href="https://www.youtube.com/channel/UCw3E9DGhfWKaKR46QmI9abA" class="no-underline hover:underline text-white xl:text-xl lg:text-lg sm:text-md" target="_blank">VIDEOS</a></li>
+          <li><a href="/resources" class="no-underline hover:underline text-white lg:text-lg sm:text-md">RESOURCES</a></li>
+          <li><a href="/blog-page" class="no-underline hover:underline text-white lg:text-lg sm:text-md">BLOG</a></li>
+          <li><a href="https://www.youtube.com/channel/UCw3E9DGhfWKaKR46QmI9abA" class="no-underline hover:underline text-white lg:text-lg sm:text-md" target="_blank">VIDEOS</a></li>
         </ul>
       </li>
       <li><a href="/contact" class="no-underline text-white hover:underline">CONTACT</a></li>
