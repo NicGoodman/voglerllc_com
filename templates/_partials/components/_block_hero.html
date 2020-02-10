@@ -1,11 +1,11 @@
 {% block hero %}
-{% set backgroundImage = entry.heroImage.one() %}
+{% set backgroundImage = entry.heroImage.one().optimizedImagesField %}
 
 {% if backgroundImage %}
     {% set imgStyles = "background: linear-gradient(
         rgba(44, 55, 71, .20),
         rgba(44, 55, 71, .20)
-      ), url('" ~ backgroundImage.getUrl() ~ "');"|raw %}
+      ), url('" ~ backgroundImage.src() ~ "');"|raw %}
 
     {% if backgroundImage.hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
