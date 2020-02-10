@@ -1,5 +1,5 @@
 {% block hero %}
-{% set backgroundImage = entry.heroImage.one().optimizedImagesField %}
+{% set backgroundImage = entry.heroImage.one().optimizedImages %}
 
 {% if backgroundImage %}
     {% set imgStyles = "background: linear-gradient(
