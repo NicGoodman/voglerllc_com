@@ -3251,7 +3251,7 @@ table {
 }
 
 .h-56 {
-  width: 14rem;
+  height: 14rem;
 }
 
 .h-64 {
@@ -9050,7 +9050,7 @@ table {
   }
 
   .sm\:h-56 {
-    width: 14rem;
+    height: 14rem;
   }
 
   .sm\:h-64 {
@@ -14819,7 +14819,7 @@ table {
   }
 
   .md\:h-56 {
-    width: 14rem;
+    height: 14rem;
   }
 
   .md\:h-64 {
@@ -20588,7 +20588,7 @@ table {
   }
 
   .lg\:h-56 {
-    width: 14rem;
+    height: 14rem;
   }
 
   .lg\:h-64 {
@@ -26357,7 +26357,7 @@ table {
   }
 
   .sm\:h-56 {
-    width: 14rem;
+    height: 14rem;
   }
 
   .xl\:h-64 {
