@@ -7,7 +7,7 @@
         rgba(44, 55, 71, .20)
       ), url('" ~ backgroundImage.src() ~ "');"|raw %}
 
-    {% if backgroundImage.hasFocalPoint %}
+    {% if entry.heroImage.one().hasFocalPoint %}
         {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
         {% set y = backgroundImage.focalPoint | last * 100 ~ '%' %}
         {% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
