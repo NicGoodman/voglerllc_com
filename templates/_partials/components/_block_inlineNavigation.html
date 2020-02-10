@@ -1,11 +1,22 @@
 {% block inlineNav %}
-{% set navigationCardBackgroundImage = block.navigationCardBackground.one() %}
+{% set backgroundImage = block.navigationCardBackground.one().optimizedImages %}
+
+{% if backgroundImage %}
+    {% set imgStyles = "background: linear-gradient(
+        rgba(44, 55, 71, .45),
+        rgba(44, 55, 71, .45)
+      ), url('" ~ backgroundImage.src() ~ "');"|raw %}
+
+    {% if block.navigationCardBackground.one().hasFocalPoint %}
+        {% set x = backgroundImage.focalPoint | first * 100 ~ '%' %}
+        {% set y = backgroundImage.focalPoint | last * 100 ~ '%' %}
+        {% set imgStyles = imgStyles ~ ' background-position: ' ~ [x, y]|join(' ') %}
+    {% endif %}
+{% endif %}
+
 {% set navigationCardLink = block.navigationLink %}
 <a href="{{ block.navigationLink.one().url }}" class="no-underline">
-  <div id="card" class="flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv" style="background: linear-gradient(
-      rgba(44, 55, 71, .45),
-      rgba(44, 55, 71, .45)
-    ), url('{{ navigationCardBackgroundImage.getUrl }}') center; background-size:cover;">
+  <div id="card" class="flex h-16 w-64 md:w-32 md:h-32 xl:w-48 xl:h-48 m-3 md:rounded-lg shadow-lg border-white border-2 bg-cover hover:border-orange-vv" style="{{ imgStyles is defined ? imgStyles }}; background-size: cover;">
     <h3 class="m-auto w-3/4 font-montserrat text-sm xl:text-lg text-white text-center font-bold leading-normal">
       {{ block.navigationCardTitle }}</h3>
   </div>
